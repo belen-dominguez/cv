@@ -14,27 +14,55 @@ window.addEventListener('scroll', () => {
 
 /*Education */ 
 const educationDiv = document.querySelector('.education-container')
-const educationDivChildren = document.querySelector('.education-container').children
+const educationDivChildren = educationDiv.children
 
-
-console.log(educationDiv.offsetTop)
-console.log(educationDiv.getBoundingClientRect().top)
-
-
-console.log(educationDivChildren[0].children[0])
 
 window.addEventListener('scroll', () => {
-    //console.log(educationDiv.getBoundingClientRect().top)
+    
+
     if(educationDiv.getBoundingClientRect().top > 170 && educationDiv.getBoundingClientRect().top < 280 ){
 
-        educationDiv.addEventListener('scroll', () => {
-            console.log('parent', educationDivChildren[0].getBoundingClientRect().top)
-            console.log('child', educationDivChildren[0].children[0].getBoundingClientRect().top)
+        educationDiv.addEventListener('scroll', (e) => {
+           
 
+           
+            //console.log( e.target)
+            
+            for(i = 0; i < educationDivChildren.length; i++){
+                
+                for(let j = 0; j < educationDivChildren[i].children.length; j++){
+            
+                   // console.log(educationDivChildren[1].children[4].getBoundingClientRect().top)
+
+                    if(educationDivChildren[1].children[4].getBoundingClientRect().top == 458){
+                        console.log('holi')
+                        //educationDiv.style.overflow = "hidden"
+                    }
+
+                    let top = educationDivChildren[i].children[j].getBoundingClientRect().top;
+
+                    if(top > 0 || top < 500){
+                        educationDivChildren[i].children[j].classList.add('education-item-active')
+                    }
+                    if(top < 0 || top > 500) {
+                        educationDivChildren[i].children[j].classList.remove('education-item-active')
+                    }
+                 }
+                    
+            }
         })
+           
+            // console.log('parent', educationDivChildren[0].getBoundingClientRect().top)
+            // console.log('child 1 ', educationDivChildren[0].children[0].getBoundingClientRect().top)
+            // console.log('child 3', educationDivChildren[0].children[2].getBoundingClientRect().top)
+
+    }
 
         /*
 
+
+
+        HIJO 1 -
         hijo esta en pantalla desde 
         parent -> 143
         child -> 159
@@ -81,14 +109,20 @@ window.addEventListener('scroll', () => {
         // educationDivChildren[0].addEventListener('scroll', () => {
 
         // })
-    }
+    
 
 })
 
 
+/*work experience*/
+const openDescription = (e) => {
+    let description = e.target.nextElementSibling;
+
+    description.classList.toggle('hide')
+}
 
 
- /*Display work*/
+ /*Display projects*/
  
  const tabStyle = (btn) => {
 

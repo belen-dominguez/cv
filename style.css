@@ -110,6 +110,11 @@ header nav a {
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.education-item-active {
+    opacity: 1;
 }
 .education-item::after {
     content: '';
@@ -146,6 +151,21 @@ header nav a {
 }
 .education-item.right .title h3 {
     color:  #a5656e;
+ }
+
+
+ .work-experience {
+     margin: 2rem 0;
+ }
+ .work-experience p {
+     cursor: pointer;
+     color: teal;
+ }
+ .work-exp-item .description {
+     /* display: none; */
+ }
+ .hide {
+    display: none;
  }
 
 /*WORK*/
@@ -257,6 +277,9 @@ header nav a {
 
 
 /*CONTACT*/
+#contact  {
+    margin: 3rem 0;
+}
 #contact .container {
     display: flex;
 }
