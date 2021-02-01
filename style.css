@@ -77,6 +77,77 @@ header nav a {
     height: inherit;
 }
 
+/*EDUCATION*/
+.education h2,
+.work-experience h2 {
+    margin: 1rem 0
+}
+.education-container {
+    position: relative;
+    height: 500px;
+    overflow: scroll;
+    background-color: cadetblue;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.education-container::before{
+    content: '';
+    position: absolute;
+    height: 500%;
+    width: 5px;
+    background-color: white;
+    left: 50%;
+}
+.education-left,
+.education-right {
+    width: 40%;
+}
+.education-item {
+    position: relative;
+    background-color: white;
+    width: 94%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.education-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #f9bdc5;
+}
+.education-item.right {
+    margin-top: 10rem;
+}
+.education-item.left {
+    margin-bottom: 10rem;
+}
+.education-item.right::after{
+    left: -32%;
+    background-color: #a5656e;
+}
+.education-item.left::after{
+    left: 538px;
+}
+.education-item .title {
+    display: flex;
+    align-items: flex-end;
+}
+.education-item .title h2 {
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+.education-item .title h3 {
+   color:  #f9bdc5;
+}
+.education-item.right .title h3 {
+    color:  #a5656e;
+ }
+
 /*WORK*/
 #work .tabs {
     width: 45%;
