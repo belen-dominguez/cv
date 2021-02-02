@@ -48,78 +48,15 @@ window.addEventListener('scroll', () => {
                     
             }
 
-// console.log(educationDivChildren[0].getBoundingClientRect())
-
-//   console.log(educationDiv)
             const progressBar = document.getElementById('myBar');
             
-
-                    
-        // let totalheight = educationDiv.scrollHeight
-        let totalwidth = educationDiv.scrollTopMax
-        let divScroll = educationDiv.scrollTop
-console.log(divScroll)
-        // let width = (divScroll * 100) / totalwidth
-         let width = (divScroll * 100) / totalwidth
-        progressBar.style.width = width + "%";
-
-        //console.log(height)
+            let totalwidth = educationDiv.scrollTopMax
+            let divScroll = educationDiv.scrollTop
+            let width = (divScroll * 100) / totalwidth
+            progressBar.style.width = width + "%";
 
         })
     }
-
-        /*
-
-
-
-        HIJO 1 -
-        hijo esta en pantalla desde 
-        parent -> 143
-        child -> 159
-        hasta
-        parent -> -54
-        child -> -38
-
-
-
-        arriba de todo
-        parent -> 143
-        child -> 159
--> 16 
-
-        scrolleando hacia abajo. a la mitad del  hijo
-        parent -> 33
-        child -> 49
-        scrolleando hacia abajoi. cuando desaparece el hijo
-        parent -> -39
-        child -> -23
-
-
-        scrolleando hacia arriba. cuando se empieza a ver el hijo
-        parent -> 7
-        child -> 23
-        scrolleando hacia arriba. cuando se completa el hijo
-        parent -> 138
-        child -> 154
-
-
-
-        medio
-         parent -> -723
-        child -> -707
-
-        abajo de todo
-        parent -> -1788
-        child _> -1772
-
-
-
-        */
-      
-        // educationDivChildren[0].addEventListener('scroll', () => {
-
-        // })
-    
 
 })
 
@@ -168,5 +105,12 @@ const openDescription = (e) => {
 workDiv.addEventListener('animationend', () => {
      workDiv.classList.remove('animate__fadeInLeft')
 })
+
+
+const flipCard = () => {
+    const card = document.querySelector('.inner-card');
+
+    card.classList.toggle('twist')
+}
 
 fetchWork(workPortfolio)

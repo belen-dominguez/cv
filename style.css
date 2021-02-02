@@ -91,6 +91,7 @@ header nav a:hover {
     margin-bottom: 2rem;
 }
 .hero {
+    position: relative;
     width: 80%;
     height: inherit;
     display: flex;
@@ -106,10 +107,19 @@ header nav a:hover {
     color: black;
 }
 .hero .detail h1 span{
-    color: teal;
+    color: #008080;
 }
 .hero .img, .hero .img img {
     height: inherit;
+}
+
+.fas.fa-angle-down {
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    font-size: 86px;
+    color: rgba(0, 128, 128, .5);
+    
 }
 
 /*ABOUT*/
@@ -158,7 +168,14 @@ header nav a:hover {
 .work-exp-item h3 {
     margin-bottom: 0;
 }
-
+.work-exp-item .btn {
+    color: teal;
+    border: none;
+}
+.work-exp-item ul {
+    width: 90%;
+    margin: 0 auto;
+}
 
 .work-experience .heading::before {
     content: '02.';
@@ -433,12 +450,14 @@ header nav a:hover {
 #contact  {
     margin: 3rem 0 0;
     height: 300px;
-    background-color: teal;
+    /* background-color: teal; */
 }
 #contact h1 {
     width: 80%;
     margin: 1rem auto;
 }
+
+
 #contact .container {
     display: flex;
 }
@@ -447,11 +466,83 @@ header nav a:hover {
     flex-direction: column;
     width: 40%;
 }
-#contact .details a,
-#contact .details  i,
-#contact .details p {
+/* #contact a,
+#contact  p {
     color: white;
+} */
+#contact  .contact i,
+#contact  .details i {
+    margin: .5rem 1rem;
+    /* color: white; */
 }
-#contact .details  i {
-    margin: 1rem;
+.copyright {
+    text-align: right;
+    padding: 1rem 3rem;
+    color: teal;
+    font-weight: 700;
+}
+.copyright .fa-heart {
+    color: rgb(170, 5, 5);
+}
+
+
+.presentation-card {
+    width: 400px;
+    height: 230px;
+    margin: 1rem auto;
+    border-radius: 15px;
+    border: 4px solid teal;
+    cursor: pointer;
+}
+.inner-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+.front {
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front:hover img {
+    transform: rotate(360deg);
+    transition: 1s all ease;
+}
+.back {
+    padding: 1rem;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+.back p {
+    color: black;
+}
+.back a ,
+.back i {
+    color: teal;
+}
+.back  i{
+    margin: .5rem;
+}
+.back .social {
+    text-align: right;
+}
+.back .social i {
+    font-size: 38px;
+    margin: .5rem;
+    color: rgb(178, 96, 216);
+}
+.front, .back {
+    position: absolute;
+    /* -webkit-backface-visibility: hidden; Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.twist {
+    transform: rotateY(180deg);
 }

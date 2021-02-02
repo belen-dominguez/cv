@@ -20,10 +20,10 @@
                 
             </div>
             <nav>
-                <a href="#top">Home</a>
-                <a href="#about">About</a>
-                <a href="#work">My Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#top"> < start ></a>
+                <a href="#about">< about ></a>
+                <a href="#work"> < projects ></a>
+                <a href="#contact"> < contact ></a>
             </nav>
         </div>
     </header>
@@ -36,7 +36,7 @@
                 <img src="./imgs/programmer.jpg" alt="">
             </div>
         </div>
-       <a href="#about" class="bounce"><i class="fas fa-angle-down"></i></a> 
+       <a href="#about" class="link-down "><i class="fas fa-angle-down animate__animated animate__bounce animate__infinite"></i></a> 
     </section>
     <section id="about">
         <div class="container">
@@ -175,7 +175,7 @@
                             <p>
                             <strong>Certification:</strong>  “Custom HTML” - Mercadoshops.
                             </p>
-                            <a href="https://belen-dominguez.github.io/portfolio/" class="btn" target="_blank">Some of my projects <i class="fas fa-rocket"></i></a>
+                            <a href="https://belen-dominguez.github.io/portfolio/" class="btn" target="_blank">Some of my works <i class="fas fa-rocket"></i></a>
                         </div>
                     </div>
                     <div class="work-exp-item">
@@ -187,7 +187,7 @@
                         <div class="description hide animate__animated animate__flipInX">
                             <p>Itechno is a tech company, dedicated to network administration, providing network infrastructure and technical support solutions.
                             Some of the services provided:  Design and cabling of Datacenters, Unified communications, IT management, Managed Security.
-                            Some of the clients:  Medallia, La Ley, EMC, Sato, Presidencia de la Nación, Autopistas de Sol, Thomson Reuter,  Nike, Embajada de Brasil, Embajada de Perú, etc. 
+                            Some clients:  Medallia, La Ley, EMC, Sato, Presidencia de la Nación, Autopistas de Sol, Thomson Reuter,  Nike, Embajada de Brasil, Embajada de Perú, etc. 
                             </p>
                             <p><strong>Position:</strong> In charge of technical support and project executions.</p>
                             <p><strong>Gained experience:</strong>
@@ -213,7 +213,7 @@
     </section>
     <section id="work">
         <div class="container">
-            <h1> < my Projects ></h1>
+            <h1> < projects ></h1>
             <div class="tabs">
                 <button class="btn btn-active" id="all" onclick="fetchWork(event)"> All</button>
                 <button class="btn" id="react" onclick="fetchWork(event)"> React</button>
@@ -250,20 +250,47 @@
                 <div class="pag-container">
                 </div>
             </div>
-            <h1> < / my Projects ></h1>
+            <h1> < / projects ></h1>
         </div>
     </section>
+    
     <footer id="contact">
         <h1> < contact ></h1>
-        <div class="container">
+        <!-- <div class="container">
             <div class="details">
-                <p><i class="fas fa-globe-americas"></i> San Isidro, Buenos Aires</p>
-               <a href="tel:1137733878"><i class="fas fa-pager"></i> 1137733878</a> 
-               <a href="mailto:belen.dominguez.sigler@gmail.com"><i class="far fa-envelope"></i> belen.dominguez.sigler@gmail.com</a> 
+                <p><i class="fas fa-user-ninja"></i>Username: Belu Domínguez Sigler</p>
+                <p> <i class="fas fa-globe-americas"></i>Location:  San Isidro, Buenos Aires</p>
+               
             </div>
             <div class="contact">
                 <h2>Let's talk!</h2>
+                <a href="tel:1137733878"><i class="fas fa-pager"></i> 1137733878</a> 
+               <a href="mailto:belen.dominguez.sigler@gmail.com"><i class="fas fa-pen"></i> belen.dominguez.sigler@gmail.com</a> 
             </div>
+        </div> -->
+
+        <div class="presentation-card" onclick="flipCard()">
+            <div class="inner-card">
+                <div class="front">
+                    <img src="./imgs/logo.png" alt="">
+                </div>
+                <div class="back">
+                    <h2>Let's talk!</h2>
+                    <p><i class="fas fa-user-ninja"></i> Belu Domínguez Sigler</p>
+                    <p> <i class="fas fa-globe-americas"></i> San Isidro, Buenos Aires</p>
+                   <p><a href="tel:1137733878"><i class="fas fa-pager"></i> 1137733878</a></p>  
+                    <a href="mailto:belen.dominguez.sigler@gmail.com"><i class="fas fa-pen"></i> belen.dominguez.sigler@gmail.com</a> 
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/ma-belen-dominguez-sigler-93172b57/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/belen-dominguez" target="_blank"><i class="fab fa-github-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="copyright">
+            <p>Design by belu, with <i class="fas fa-heart"></i></p>
         </div>
     </footer>
     
