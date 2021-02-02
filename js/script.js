@@ -100,13 +100,22 @@ const pagination = (array) => {
 
     for(let i = 1; i < (nroPages + 1); i++){
         paginationDiv.innerHTML += `
-            <button class="pag-number" onclick="changePage(${i -1})">
+            <button class="pag-number" onclick="changePage(event, ${i -1})">
                 ${i}
             </button>
         `
     }
 }
 
-const changePage = (nro) => {
+const changePage = (e, nro) => {
+   
+    const btnPagination = document.querySelector('.pag-container').children;
+
+    for(i = 0; i < btnPagination.length; i++){
+        btnPagination[i].classList.remove('btnActive')
+    }
+    e.target.classList.add('btnActive')
+    
     displayWork(splitArr[nro])
+
 }
