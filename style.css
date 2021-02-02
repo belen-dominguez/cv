@@ -167,7 +167,8 @@ header nav a:hover {
     position: relative;
 }
 .education .heading {
-    width: 92%;
+    width: 80vw;
+    max-width: 1200px;
     margin: 1rem auto;
 }
 .education-container {
@@ -176,7 +177,7 @@ header nav a:hover {
     background-color: cadetblue;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem;
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 35px;
@@ -202,6 +203,9 @@ header nav a:hover {
 .education-left,
 .education-right {
     width: 40%;
+}
+.education-left {
+    margin-right: 100px;
 }
 .education-item {
     position: relative;
@@ -232,11 +236,11 @@ header nav a:hover {
     margin-bottom: 10rem;
 }
 .education-item.right::after{
-    left: -32%;
+    left: -73px;
     background-color: #a5656e;
 }
 .education-item.left::after{
-    left: 538px;
+    right: -76px;
 }
 .education-item .title {
     display: flex;
