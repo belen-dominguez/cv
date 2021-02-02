@@ -31,10 +31,10 @@ window.addEventListener('scroll', () => {
             
                    // console.log(educationDivChildren[1].children[4].getBoundingClientRect().top)
 
-                    if(educationDivChildren[1].children[4].getBoundingClientRect().top == 458){
-                        console.log('holi')
-                        //educationDiv.style.overflow = "hidden"
-                    }
+                    // if(educationDivChildren[1].children[4].getBoundingClientRect().top == 458){
+                    //     console.log('holi')
+                    //     //educationDiv.style.overflow = "hidden"
+                    // }
 
                     let top = educationDivChildren[i].children[j].getBoundingClientRect().top;
 
@@ -59,6 +59,14 @@ window.addEventListener('scroll', () => {
     }
 
 })
+
+
+const scrollDown = (nro) => {
+    educationDiv.scrollBy({
+        top: nro,
+        behavior: 'smooth'
+    })
+}
 
 
 /*work experience*/

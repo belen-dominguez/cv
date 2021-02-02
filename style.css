@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -147,6 +150,7 @@ header nav a:hover {
     font-weight: 700;
 }
 #about  .skills {
+    display: inline-block;
     padding: .5rem 1rem;
     margin: .5rem;
     border: 2px solid teal;
@@ -272,6 +276,26 @@ header nav a:hover {
 }
 .education-item.right .title h3 {
     color:  #a5656e;
+ }
+
+ .link-down, 
+ .link-up {
+     cursor: pointer;
+     position: absolute;
+    background: transparent;
+    border: none;
+ }
+ .link-up {
+    top: 68px;
+    right: 31px;
+ }
+ .link-down {
+    bottom: 20px;
+    right: 31px;
+ }
+ .link-down i, .link-up i {
+    color: #f9bdc5 !important;
+    font-size: 81px ;
  }
  
  .progress-container{
@@ -458,14 +482,14 @@ header nav a:hover {
 }
 
 
-#contact .container {
+/* #contact .container {
     display: flex;
 }
 #contact .details {
     display: flex;
     flex-direction: column;
     width: 40%;
-}
+} */
 /* #contact a,
 #contact  p {
     color: white;
@@ -487,29 +511,49 @@ header nav a:hover {
 
 
 .presentation-card {
-    width: 400px;
-    height: 230px;
+    width: 500px;
+    height: 300px;
     margin: 1rem auto;
-    border-radius: 15px;
-    border: 4px solid teal;
     cursor: pointer;
 }
 .inner-card {
+    border: 7px solid teal;
+    box-shadow: 4px -1px 10px -1px rgba(0,0,0,0.75);
+    border-radius: 15px;
     width: 100%;
     height: 100%;
     position: relative;
     transition: transform .8s;
     transform-style: preserve-3d;
+    transition: 1s all ease;
+}
+.inner-card:hover {
+    transition: 1s all ease;
+    border: 7px solid #773355;
 }
 .front {
     background-color: teal;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 800ms ease-in-out;
+}
+.front img {
+    transition: 1s all ease;
 }
 .front:hover img {
     transform: rotate(360deg);
     transition: 1s all ease;
+}
+.front:hover {
+    background-color: #773355;
+}
+.prueba {
+    font-family: 'Yusei Magic', sans-serif;
+    position: absolute;
+    /* transform: rotate(270deg); */
+    left: 10px;
+    bottom: 10px;
 }
 .back {
     padding: 1rem;
@@ -525,6 +569,7 @@ header nav a:hover {
 }
 .back  i{
     margin: .5rem;
+    color: #773355;
 }
 .back .social {
     text-align: right;
@@ -532,17 +577,21 @@ header nav a:hover {
 .back .social i {
     font-size: 38px;
     margin: .5rem;
-    color: rgb(178, 96, 216);
+    color: #773355;
 }
 .front, .back {
     position: absolute;
-    /* -webkit-backface-visibility: hidden; Safari */
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100%;
     height: 100%;
 }
 
 .twist {
     transform: rotateY(180deg);
+}
+
+
+@media screen and (max-width: 600px) {
+    
 }

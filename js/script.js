@@ -2,7 +2,7 @@ const heroTitle = document.querySelector('.hero .detail h1');
 
 const titleEffect =  () => {
    
-    let title = ['Welcome! ' ,'my name is ', 'Belu' ,', and this is my work...']
+    let title = ['Hi! ' ,'my name is ', 'Belu' ,', and this is my work...']
 
 
     let j = 1

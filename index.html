@@ -6,6 +6,7 @@
     <title>Work</title>
     <link rel="stylesheet" href="style.css">
     <script src='https://kit.fontawesome.com/a9410861d7.js' crossorigin='anonymous'></script>
+   
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -36,7 +37,7 @@
                 <img src="./imgs/programmer.jpg" alt="">
             </div>
         </div>
-       <a href="#about" class="link-down "><i class="fas fa-angle-down animate__animated animate__bounce animate__infinite"></i></a> 
+       <a href="#about" ><i class="fas fa-angle-down animate__animated animate__bounce animate__infinite"></i></a> 
     </section>
     <section id="about">
         <div class="container">
@@ -44,6 +45,7 @@
             <h3>frontend Developer (Jr).</h3>
             <p>In search of a work place where I can <strong>grow</strong>  as a developer, encounter constant <strong>challenges</strong> , <strong>learn</strong>  from experienced programmers, generating <strong>value</strong>  in the tech area.</p>
              <p>Among my <strong>qualities</strong> , I'm a <span>proactive</span>  person with a lot of <span>initiative</span> . <span>Persistent</span>  and <span>passionate</span>.  Love challenges. <span>Independent</span>, although I also enjoy <span>teamwork</span>.</p>
+             <p>Some of my <strong>hobbies</strong>. When I'm not bussy fighting crime as <em>The Zorro</em>, I love <strong>walking</strong>, solving <strong>puzzles</strong> , taking care of the <strong>fish</strong>, loving my <strong>cats</strong> , <strong>""playing""</strong>  musical instruments, listening to good <strong>music</strong>, and lot's of coding.</p>
              <h3>frontend Skills.</h3>
                 <span class="skills">HTML</span> 
                 <span class="skills">CSS</span>
@@ -139,7 +141,7 @@
                             <h4>CCNA - Cisco Systems </h4>
                             <p>Cisco Certified Network Associate Routing & Switching Certificación en CCNA 1 y 2.</p>
                         </div>
-                        <div class="education-item right">
+                        <div id="bottom" class="education-item right">
                             <div class="title">
                                 <h2>1989 - 2003.</h2> 
                                 <h3>Northlands School</h3>
@@ -151,6 +153,13 @@
             
                     </div>
                 </div>
+            
+                <button onclick="scrollDown(-300)" class="link-up">
+                    <i class="fas fa-angle-double-up animate__animated animate__pulse animate__infinite"></i> 
+                </button> 
+                <button onclick="scrollDown(300)" class="link-down ">
+                    <i class="fas fa-angle-double-down animate__animated animate__pulse animate__infinite"></i> 
+                </button> 
                 <div class="progress-container">
                     <div class="progress-bar" id="myBar"></div>
                   </div>
@@ -256,18 +265,7 @@
     
     <footer id="contact">
         <h1> < contact ></h1>
-        <!-- <div class="container">
-            <div class="details">
-                <p><i class="fas fa-user-ninja"></i>Username: Belu Domínguez Sigler</p>
-                <p> <i class="fas fa-globe-americas"></i>Location:  San Isidro, Buenos Aires</p>
-               
-            </div>
-            <div class="contact">
-                <h2>Let's talk!</h2>
-                <a href="tel:1137733878"><i class="fas fa-pager"></i> 1137733878</a> 
-               <a href="mailto:belen.dominguez.sigler@gmail.com"><i class="fas fa-pen"></i> belen.dominguez.sigler@gmail.com</a> 
-            </div>
-        </div> -->
+        
 
         <div class="presentation-card" onclick="flipCard()">
             <div class="inner-card">
@@ -275,22 +273,23 @@
                     <img src="./imgs/logo.png" alt="">
                 </div>
                 <div class="back">
-                    <h2>Let's talk!</h2>
+                    <h2>Fight the boredom! </h2>
+                    <h4>Let's code!</h4>
                     <p><i class="fas fa-user-ninja"></i> Belu Domínguez Sigler</p>
                     <p> <i class="fas fa-globe-americas"></i> San Isidro, Buenos Aires</p>
                    <p><a href="tel:1137733878"><i class="fas fa-pager"></i> 1137733878</a></p>  
                     <a href="mailto:belen.dominguez.sigler@gmail.com"><i class="fas fa-pen"></i> belen.dominguez.sigler@gmail.com</a> 
                     <div class="social">
-                        <a href="https://www.linkedin.com/in/ma-belen-dominguez-sigler-93172b57/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a  class="animate__animated animate__rubberBand" href="https://www.linkedin.com/in/ma-belen-dominguez-sigler-93172b57/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/belen-dominguez" target="_blank"><i class="fab fa-github-square"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        
+
         <div class="copyright">
-            <p>Design by belu, with <i class="fas fa-heart"></i></p>
+            <p>Design by belu, with <i class="fas fa-heart"></i>. Fight the boredom! Let's code!</p>
         </div>
     </footer>
     
