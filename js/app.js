@@ -18,15 +18,12 @@ const educationDivChildren = educationDiv.children
 
 
 window.addEventListener('scroll', () => {
-    
+    let startHeight = 0;  
 
     if(educationDiv.getBoundingClientRect().top > 170 && educationDiv.getBoundingClientRect().top < 280 ){
 
         educationDiv.addEventListener('scroll', (e) => {
-           
-
-           
-            //console.log( e.target)
+ 
             
             for(i = 0; i < educationDivChildren.length; i++){
                 
@@ -50,12 +47,25 @@ window.addEventListener('scroll', () => {
                  }
                     
             }
-        })
-           
-            // console.log('parent', educationDivChildren[0].getBoundingClientRect().top)
-            // console.log('child 1 ', educationDivChildren[0].children[0].getBoundingClientRect().top)
-            // console.log('child 3', educationDivChildren[0].children[2].getBoundingClientRect().top)
 
+// console.log(educationDivChildren[0].getBoundingClientRect())
+
+//   console.log(educationDiv)
+            const progressBar = document.getElementById('myBar');
+            
+
+                    
+        // let totalheight = educationDiv.scrollHeight
+        let totalwidth = educationDiv.scrollTopMax
+        let divScroll = educationDiv.scrollTop
+console.log(divScroll)
+        // let width = (divScroll * 100) / totalwidth
+         let width = (divScroll * 100) / totalwidth
+        progressBar.style.width = width + "%";
+
+        //console.log(height)
+
+        })
     }
 
         /*
@@ -116,6 +126,7 @@ window.addEventListener('scroll', () => {
 
 /*work experience*/
 const openDescription = (e) => {
+
     let description = e.target.nextElementSibling;
 
     description.classList.toggle('hide')

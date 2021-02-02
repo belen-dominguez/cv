@@ -59,6 +59,20 @@ header nav a {
 header nav a:hover {
     color: rgb(32, 32, 32);
 }
+.bounce {
+   animation:  bounce 0.4s infinite ease-in-out;
+}
+@keyframes bounce {
+    0% {
+        -moz-transform: translate(0, 0);
+    }
+    50% {
+        -moz-transform: translate(0, -6px);
+    }
+    100% {
+        -moz-transform: translate(0, 0);
+    }
+}
 
 /*TOP*/
 #top::before,
@@ -131,7 +145,8 @@ header nav a:hover {
 
 /*EDUCATION*/
 .education {
-    margin: 4rem 0;
+    margin: 4rem auto;
+    max-width: 1250px;
 }
 
 #work .heading,
@@ -148,23 +163,42 @@ header nav a:hover {
 .work-experience .heading::before {
     content: '02.';
 }
-.education-container {
+.education {
     position: relative;
+}
+.education .heading {
+    width: 92%;
+    margin: 1rem auto;
+}
+.education-container {
     height: 500px;
     overflow: scroll;
     background-color: cadetblue;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 2rem;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.education-container::-webkit-scrollbar {
+   display: none;
+ }
 .education-container::before{
     content: '';
     position: absolute;
-    height: 500%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
     width: 5px;
     background-color: white;
     left: 50%;
 }
+  
+
 .education-left,
 .education-right {
     width: 40%;
@@ -218,20 +252,35 @@ header nav a:hover {
 .education-item.right .title h3 {
     color:  #a5656e;
  }
-
+ 
+ .progress-container{
+     position: absolute;
+     top: 50px;
+     left: 0;
+     height:10px;
+     width: 1250px;
+     background-color: white;
+ }
+ .progress-bar {
+    height:10px;
+    width: 0%;
+    max-width: 100%;
+    background-color: rgb(194, 99, 99);
+ }
 
  .work-experience {
-     margin: 5rem 0;
+    margin: 5rem 0 3rem;
  }
  .work-exp-item {
      margin-bottom: 1rem;
  }
  .work-exp-item .title {
      display: flex;
-     align-items: flex-end;
+     align-items: center;
      cursor: pointer;
-     color: teal;
+     color: black;
      position: relative;
+     font-size: 20px;
  }
  .work-exp-item .title::before {
      content: '';
@@ -241,7 +290,11 @@ header nav a:hover {
      height: 100%;
  }
  .work-exp-item .title  h4{
-    color:  #f9bdc5;
+    color:  #d8919b;
+    margin-left: 1rem;
+    font-size: 18px;
+}
+.work-exp-item .title i {
     margin-left: 1rem;
 }
  .work-exp-item .description {
@@ -391,10 +444,10 @@ header nav a:hover {
     width: 40%;
 }
 #contact .details a,
-#contact .details a i,
+#contact .details  i,
 #contact .details p {
     color: white;
 }
-#contact .details a i {
+#contact .details  i {
     margin: 1rem;
 }
