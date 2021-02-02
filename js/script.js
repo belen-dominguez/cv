@@ -6,7 +6,7 @@ const titleEffect =  () => {
 
 
     let j = 1
-    const algo = (word) => {
+    const printTitle = (word) => {
 
         let i = 0;
         
@@ -24,7 +24,7 @@ const titleEffect =  () => {
                         return
                     }
                     else {
-                        algo(title[j])
+                        printTitle(title[j])
                         j++
     
                     }
@@ -35,7 +35,7 @@ const titleEffect =  () => {
     }
 
     
-    algo(title[0])
+    printTitle(title[0])
    
 }
 

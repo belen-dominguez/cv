@@ -28,17 +28,10 @@ window.addEventListener('scroll', () => {
             for(i = 0; i < educationDivChildren.length; i++){
                 
                 for(let j = 0; j < educationDivChildren[i].children.length; j++){
-            
-                   // console.log(educationDivChildren[1].children[4].getBoundingClientRect().top)
-
-                    // if(educationDivChildren[1].children[4].getBoundingClientRect().top == 458){
-                    //     console.log('holi')
-                    //     //educationDiv.style.overflow = "hidden"
-                    // }
 
                     let top = educationDivChildren[i].children[j].getBoundingClientRect().top;
 
-                    if(top > 0 || top < 500){
+                    if(top > 0 || top < 600){
                         educationDivChildren[i].children[j].classList.add('education-item-active')
                     }
                     if(top < 0 || top > 500) {
@@ -73,8 +66,16 @@ const scrollDown = (nro) => {
 const openDescription = (e) => {
 
     let description = e.target.nextElementSibling;
-
     description.classList.toggle('hide')
+
+    const arrowIcon = e.target.lastElementChild
+    if(arrowIcon.classList.contains('fa-chevron-right')){
+        arrowIcon.classList.replace('fa-chevron-right', 'fa-chevron-down')
+    }
+    else {
+        arrowIcon.classList.replace('fa-chevron-down', 'fa-chevron-right')
+    }
+    
 }
 
 
@@ -119,6 +120,19 @@ const flipCard = () => {
     const card = document.querySelector('.inner-card');
 
     card.classList.toggle('twist')
+}
+
+const openNav = () => {
+    const navMobile = document.querySelector('.header-container nav');
+    navMobile.classList.add('display')
+
+    let childItems = navMobile.children
+
+    for (let i =0; i < childItems.length; i++){
+        childItems[i].addEventListener('click', () => {
+            navMobile.classList.remove('display')
+        })
+    }
 }
 
 fetchWork(workPortfolio)
