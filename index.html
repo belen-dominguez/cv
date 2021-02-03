@@ -320,6 +320,29 @@
                 <button class="btn" id="javascript" onclick="fetchWork(event)">Javascript</button>
                 <button class="btn" id="html" onclick="fetchWork(event)">Html & CSS</button>
             </div>
+            <div id="work-item" class="individual-work">
+                <i style="cursor: pointer;" class="fas fa-times" onclick="closeWork()"></i>
+                
+                <div class="container-work">
+                    <div class="description">
+                        <div class="header">
+                            <div class="arrows-slide">
+                                <i class="fas fa-chevron-left" onclick="changeWork(28, -1)"></i>
+                                <i class="fas fa-chevron-right" onclick="changeWork(28, +1)"></i>
+                            </div>
+                            <h2>Landing Captivate</h2>
+                        </div>
+                        <p>Developed with: React</p>
+                        <p>Date: </p>
+                        <p>Status: </p>
+                        <a href="https://belen-dominguez.github.io/practicas/17-Captivate/"> Check it Out!</a>
+                    </div>
+                    <div class="image">
+                        <img src="./imgs/captivate-preview.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
             <div class="work animate__animated animate__fadeInLeft">
                 <div class="work-item">
                     <a href="#" target="_blank">
@@ -345,7 +368,12 @@
                         </div>
                     </a>
                 </div>
+            </div> <!--end portfolio-->
+        
+            <div class="image-large">
+                <img src="./imgs/large/movies-large.jpg" alt="">
             </div>
+            
             <div class="pagination">
                 <div class="pag-container">
                 </div>
@@ -380,7 +408,7 @@
 
 
         <div class="copyright">
-            <p>Design by belu, with <i class="fas fa-heart"></i></p>
+            <p>Design by belu, with <i class="fas fa-heart"></i>. <a href="https://github.com/belen-dominguez/cv" target="_blank">Check repo</a></p>
         </div>
     </footer>
     

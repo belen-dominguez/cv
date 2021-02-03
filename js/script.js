@@ -79,6 +79,20 @@ const fetchWork = (e) => {
 
 }
 
+const changeWork = (id , nr) => {
+    let workId = id + nr;
+
+    if(workId == -1){
+        workId = workPortfolio.length -1
+    }
+    if(workId == workPortfolio.length){
+        workId = 0;
+    }
+
+    displayIndividualProject(workId)
+}
+
+
 const pagination = (array) => {
 
     let nroPages = Math.ceil(array.length / 10)

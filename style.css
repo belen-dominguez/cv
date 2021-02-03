@@ -83,7 +83,8 @@ header nav a:hover {
 /*TOP*/
 #top::before,
 #about::before,
-#work::before {
+#work::before,
+#work-item::before {
     display: block;
     content: " ";
     margin-top: -100px;
@@ -448,6 +449,83 @@ header nav a:hover {
     transform: translateY(-20px);
 }
 
+.individual-work {
+    display: none;
+}
+.displayWork {
+    display: block;
+}
+.individual-work {
+    text-align: right;
+    margin-bottom: 3rem;
+}
+.individual-work .fas.fa-times {
+    margin: .5rem;
+}
+.container-work {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+}
+.container-work .description {
+    width: 50%;
+    text-align: left;
+    padding-right: .5rem;
+}
+.container-work .description a {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    background-color: #735;
+    color: white;
+    border-radius: 10px;
+}
+.container-work .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+.container-work .arrows-slide i {
+    padding: .6rem 1.8rem;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container-work  .image {
+    width: 50%;
+    height: inherit;
+    border: 2px solid teal;
+    cursor: zoom-in;
+}
+.container-work  .image img {
+    height: 311px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top; 
+}
+.image-large {
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    cursor: pointer;
+    display: none;
+    overflow-y: scroll;
+
+}
+.image-large img {
+    width: 70%;
+    padding-top: 1rem;
+}
 
 /*PAGINATION*/
 

@@ -98,12 +98,12 @@ const openDescription = (e) => {
      workDiv.innerHTML = workToDisplay.reduce((html, item) => {
          return html += `
          <div class="work-item">
-         <a href="${item.link}" target="_blank">
-         <img src="${item.img}" alt="${item.name}">
-         <div class="text">
-         <h3> ${item.name} </h3>
-         </div>
-         </a>
+            <a href="#work-item" id="${item.id}" onclick="displayIndividualProject(${item.id})">
+                <img src="${item.img}" alt="${item.name}">
+                <div class="text">
+                 <h3> ${item.name} </h3>
+                </div>
+            </a>
          </div>
          `
         },"")
@@ -137,3 +137,55 @@ const openNav = () => {
 }
 
 fetchWork(workPortfolio)
+
+
+/*display indivifual work*/
+const individualMainDiv = document.querySelector('.individual-work');
+
+const displayIndividualProject = (id) => {
+    let work = workPortfolio.filter(item => item.id == id)[0];
+
+    individualMainDiv.classList.add('displayWork');
+
+    const individualDiv = document.querySelector('.container-work');
+
+    individualDiv.innerHTML = `
+        <div class="description">
+            <div class="header">
+                <div class="arrows-slide">
+                    <i class="fas fa-chevron-left" onclick="changeWork(${work.id}, -1)"></i>
+                    <i class="fas fa-chevron-right" onclick="changeWork(${work.id}, +1)"></i>
+                </div>
+                <h2>Project #${work.id}</h2>
+            </div>
+            <h2> ${work.name}</h2>
+            <p>Developed with:  ${work.type}</p>
+            <p>Description:  ${work.description}</p>  
+            <p>Status: ${work.status}</p>
+            <a href="${work.link}" target="_blank"> Check it Out!</a>
+        </div>
+        <div class="image" onclick="openImage(${work.id})">
+                <img src="${work.img}" alt="${work.name}">
+        </div>
+    `
+}
+
+
+const closeWork = () => {
+    individualMainDiv.classList.remove('displayWork');
+}
+
+const openImage = (id) => {
+    const imgLargeDiv = document.querySelector('.image-large');
+    imgLargeDiv.style.display= "block"
+
+    imgLargeDiv.addEventListener('click', () => {
+        imgLargeDiv.style.display= "none"
+    })
+
+    let work = workPortfolio.filter(item => item.id == id)[0];
+    imgLargeDiv.innerHTML = `
+      <img src="${work.img_large}" alt="${work.name}">
+    `
+
+}
