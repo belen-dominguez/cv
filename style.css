@@ -449,11 +449,7 @@ header nav a:hover {
 
 
 /*PAGINATION*/
-.pagination {
-    position: absolute;
-    top: 14%;
-    right: -5%;
-}
+
 .pag-container {
     width: 30%;
     margin: 1rem auto;
@@ -531,11 +527,22 @@ header nav a:hover {
     align-items: center;
     transition: all 800ms ease-in-out;
 }
-.front img {
+.front .card-logo {
     transition: 1s all ease;
 }
-.front:hover img {
+.front .flip-icon {
+    max-width: 17%;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    transition: 1s all ease;
+}
+.front:hover .card-logo {
     transform: rotate(360deg);
+    transition: 1s all ease;
+}
+.front:hover .flip-icon {
+    transform: rotateY(360deg);
     transition: 1s all ease;
 }
 .front:hover {
@@ -549,7 +556,7 @@ header nav a:hover {
     bottom: 10px;
 }
 .back {
-    padding: 1rem;
+    padding: 3rem 1rem 1rem;
     transform: rotateY(180deg);
     background-color: white;
 }
@@ -582,7 +589,12 @@ header nav a:hover {
     transition: all 1s ease;
 }
 .back .social {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.fas.fa-download{
+    font-size: 32px !important;
 }
 .back .social i {
     font-size: 38px;
@@ -629,6 +641,7 @@ header nav a:hover {
 @media screen and (max-width: 600px) {
     body {
         font-size: 13px;
+        overflow-x: hidden;
     }
     .nav-mobile {
         display: block;
@@ -638,9 +651,14 @@ header nav a:hover {
     header nav {
         display: none;
     }
+    #top  {
+        height: 80vh;
+        position: relative;
+    }
     .hero {
         flex-direction: column;
         width: 100%;
+        height: auto;
     }
     .hero .detail, .hero .img {
         width: 90%;
@@ -648,7 +666,7 @@ header nav a:hover {
     #top .fas.fa-angle-down {
         font-size: 49px;
         left: 42%;
-        bottom: -12px;
+        bottom: -50px;
     }
     .container {
         width: 90%;
@@ -734,12 +752,7 @@ header nav a:hover {
         padding-left: 10px;
         margin-bottom: .5rem;
     }
-    .pagination {
-        bottom: 40px;
-        left: 15%;
-        top: unset;
-        right: unset;
-    }
+   
     .pag-container {
         width: 100%;
     }
@@ -748,6 +761,11 @@ header nav a:hover {
     }
     .back i {
         font-size: 20px;
+    }
+
+    .title-contact {
+        cursor: pointer;
+        color: teal;
     }
 
     

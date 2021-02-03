@@ -95,21 +95,29 @@ const pagination = (array) => {
 
     displayWork(splitArr[0])
 
-    
-   // paginationDiv.innerHTML = ""
-
     for(let i = 1; i < (nroPages + 1); i++){
-        paginationDiv.innerHTML += `
-            <button class="pag-number" onclick="changePage(event, ${i -1})">
-                ${i}
-            </button>
-        `
+
+        if(i == 1) {
+            paginationDiv.innerHTML += `
+                <button class="pag-number btnActive" onclick="changePage(event, ${i -1})">
+                    ${i}
+                </button>
+            `
+        }
+        else {
+            paginationDiv.innerHTML += `
+                <button class="pag-number" onclick="changePage(event, ${i -1})">
+                    ${i}
+                </button>
+            `
+        }
     }
 }
 
 const changePage = (e, nro) => {
    
     const btnPagination = document.querySelector('.pag-container').children;
+    const topProject = document.querySelector('#work')
 
     for(i = 0; i < btnPagination.length; i++){
         btnPagination[i].classList.remove('btnActive')
@@ -118,4 +126,5 @@ const changePage = (e, nro) => {
     
     displayWork(splitArr[nro])
 
+    location.href = "#work";
 }

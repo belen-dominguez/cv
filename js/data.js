@@ -29,7 +29,7 @@ const workPortfolio = [
     },
     {
         type: "javascript",
-        name: "Mometest",
+        name: "Memotest",
         img: "./imgs/memotest-preview.jpg",
         link: "https://belen-dominguez.github.io/practicas/30-memotest/",
         status: ""

@@ -68,7 +68,8 @@ const openDescription = (e) => {
     let description = e.target.nextElementSibling;
     description.classList.toggle('hide')
 
-    const arrowIcon = e.target.lastElementChild
+    const arrowIcon = e.target.lastElementChild.firstElementChild
+
     if(arrowIcon.classList.contains('fa-chevron-right')){
         arrowIcon.classList.replace('fa-chevron-right', 'fa-chevron-down')
     }
