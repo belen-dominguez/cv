@@ -531,7 +531,7 @@ header nav a:hover {
     transition: 1s all ease;
 }
 .front .flip-icon {
-    max-width: 17%;
+    max-width: 10%;
     position: absolute;
     bottom: 7px;
     right: 7px;
@@ -639,6 +639,9 @@ header nav a:hover {
 
 
 @media screen and (max-width: 600px) {
+    html {
+        overflow-x: hidden;
+    }
     body {
         font-size: 13px;
         overflow-x: hidden;
@@ -652,7 +655,7 @@ header nav a:hover {
         display: none;
     }
     #top  {
-        height: 80vh;
+        height: auto;
         position: relative;
     }
     .hero {
@@ -671,11 +674,13 @@ header nav a:hover {
     .container {
         width: 90%;
     }
-
+    .education .heading {
+        width: 88vw;
+    }
     .education .heading::before, 
     .work-experience .heading::before {
         top: -79%;
-        left: -11%;
+        left: -5%;
         font-size: 50px;
         color: lightgray;
         z-index: -5;
@@ -766,6 +771,9 @@ header nav a:hover {
     .title-contact {
         cursor: pointer;
         color: teal;
+    }
+    #contact {
+        height: auto;
     }
 
     

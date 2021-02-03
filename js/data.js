@@ -114,7 +114,7 @@ const workPortfolio = [
     {
         type: "javascript",
         name: "Calculator App",
-        img: "./imgs/VentaPc-preview.jpg",
+        img: "./imgs/calc_preview.jpg",
         link: "https://belen-dominguez.github.io/ada_itw/14-Calculadora/",
         status: ""
     },
