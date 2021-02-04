@@ -67,12 +67,19 @@ const changeLang = document.querySelector('.lang');
 
 changeLang.addEventListener('click', (e) => {
 
-    if(location.pathname == "/my-work/index.html"){
-        location.pathname = "/my-work/index-es.html"
+    if(location.host ==  "belen-dominguez.github.io"){
+        path = "/cv"
+    }
+    else {
+        path = "/my-work"
+    }
+
+    if(location.pathname == `${path}/index.html`){
+        location.pathname = `${path}/index-es.html`
      
     }
     else {
-        location.pathname = "/my-work/index.html"
+        location.pathname = `${path}/index.html`
      
     }
    
