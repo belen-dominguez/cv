@@ -80,6 +80,18 @@ header nav a:hover {
     }
 }
 
+.lang {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: fixed;
+    top: 3%;
+    right: 20px;
+}
+
 /*TOP*/
 #top::before,
 #about::before,
@@ -473,6 +485,9 @@ header nav a:hover {
     text-align: left;
     padding-right: .5rem;
 }
+.container-work .description p {
+    margin-bottom: .2rem;
+}
 .container-work .description a {
     display: inline-block;
     margin: 1rem 0;
@@ -480,12 +495,18 @@ header nav a:hover {
     background-color: #735;
     color: white;
     border-radius: 10px;
+    border: 2px solid #735;
+}
+.container-work .description a:hover {
+    background-color: white;
+    color: #735; 
+    font-weight: 700;
 }
 .container-work .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20%;
+    height: 15%;
     padding-right: 1rem;
     margin-bottom: 1rem;
 }
@@ -495,6 +516,9 @@ header nav a:hover {
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+.container-work .arrows-slide i:hover {
+    background-color: #735;
 }
 .container-work  .image {
     width: 50%;
@@ -652,13 +676,7 @@ header nav a:hover {
 .front:hover {
     background-color: #773355;
 }
-.prueba {
-    font-family: 'Yusei Magic', sans-serif;
-    position: absolute;
-    /* transform: rotate(270deg); */
-    left: 10px;
-    bottom: 10px;
-}
+
 .back {
     padding: 3rem 1rem 1rem;
     transform: rotateY(180deg);
@@ -754,6 +772,11 @@ header nav a:hover {
         display: block;
         cursor: pointer;
         font-size: 28px;
+    }
+    .lang {
+        top: unset;
+        right: unset;
+        position: relative;
     }
     header nav {
         display: none;

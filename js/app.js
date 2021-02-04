@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
- window.addEventListener('load', titleEffect)
+
 
 /*Education */ 
 const educationDiv = document.querySelector('.education-container')
@@ -136,14 +136,15 @@ const openNav = () => {
     }
 }
 
-fetchWork(workPortfolio)
+
 
 
 /*display indivifual work*/
 const individualMainDiv = document.querySelector('.individual-work');
 
 const displayIndividualProject = (id) => {
-    let work = workPortfolio.filter(item => item.id == id)[0];
+    // let work = workPortfolio.filter(item => item.id == id)[0];
+    let work = myWork.filter(item => item.id == id)[0];
 
     individualMainDiv.classList.add('displayWork');
 
@@ -186,7 +187,8 @@ const openImage = (id) => {
 
     imgLargeDiv.addEventListener('click',closeImgModal )
 
-    let work = workPortfolio.filter(item => item.id == id)[0];
+    // let work = workPortfolio.filter(item => item.id == id)[0];
+    let work = myWork.filter(item => item.id == id)[0];
 
     
 

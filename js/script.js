@@ -1,24 +1,41 @@
+let myWork;
+window.addEventListener('load', () => {
+    let title
+   
+    if(location.pathname == "/my-work/index.html"){
+        myWork = workPortfolio
+        title = ['Hi! ' ,'my name is Belu,', 'frontend developer' ,' and this is my work...']
+    }
+    if(location.pathname == "/my-work/index-es.html"){
+        myWork = workPortfolioEsp
+        title = ['Hola! ' ,'soy Belu, ','programadora frontend ',' y este es mi trabajo...']
+    }
+
+    titleEffect(title)
+    // fetchWork(workPortfolio)
+    fetchWork(myWork)
+})
+
+
+
 const heroTitle = document.querySelector('.hero .detail h1');
 
-const titleEffect =  () => {
+const titleEffect =  (title) => {
    
-    let title = ['Hi! ' ,'my name is ', 'Belu' ,', and this is my work...']
-
-
     let j = 1
     const printTitle = (word) => {
 
         let i = 0;
-        
 
             let printFirst = setInterval(() => {
     
-                heroTitle.innerHTML += word.charAt(i) 
+                heroTitle.innerHTML += word.charAt(i) ;
     
                 i++
          
                 if( i == word.length){
                     clearInterval(printFirst)
+                    heroTitle.innerHTML += '</br>'
     
                     if(j == title.length){
                         return
@@ -50,7 +67,7 @@ const fetchWork = (e) => {
     let workToDisplay = []
     let id;
     
-    if(e.target == undefined){
+    if(e == undefined || e.target == undefined){
         id = 'all'
     }
     else {
@@ -60,11 +77,14 @@ const fetchWork = (e) => {
     }
 
     if(id == 'all'){
-         workToDisplay = workPortfolio
+        //  workToDisplay = workPortfolio
+        workToDisplay = myWork
     }
     else {
-        workToDisplay = workPortfolio.filter(item => item.type == id )
+        // workToDisplay = workPortfolio.filter(item => item.type == id )
+        workToDisplay = myWork.filter(item => item.type == id )
     }
+
 
     if(workToDisplay.length > 10){
         splitArr = [] 
@@ -83,9 +103,13 @@ const changeWork = (id , nr) => {
     let workId = id + nr;
 
     if(workId == -1){
-        workId = workPortfolio.length -1
+        // workId = workPortfolio.length -1
+        workId = myWork.length -1
     }
-    if(workId == workPortfolio.length){
+    // if(workId == workPortfolio.length){
+    //     workId = 0;
+    // }
+    if(workId == myWork.length){
         workId = 0;
     }
 
@@ -142,3 +166,20 @@ const changePage = (e, nro) => {
 
     location.href = "#work";
 }
+
+
+
+const changeLang = document.querySelector('.lang');
+
+changeLang.addEventListener('click', () => {
+
+    if(location.pathname == "/my-work/index.html"){
+        location.pathname = "/my-work/index-es.html"
+       
+    }
+    else {
+        location.pathname = "/my-work/index.html"
+      
+    }
+   
+})
