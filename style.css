@@ -522,7 +522,7 @@ header nav a:hover {
 }
 .container-work  .image {
     width: 50%;
-    height: inherit;
+    height: 100%;
     border: 2px solid teal;
     cursor: zoom-in;
 }
@@ -774,6 +774,7 @@ header nav a:hover {
         font-size: 28px;
     }
     .lang {
+        width: 35px;
         top: unset;
         right: unset;
         position: relative;
