@@ -1,12 +1,22 @@
 let myWork;
 window.addEventListener('load', () => {
+
+    let path;
+
+    if(location.host ==  "belen-dominguez.github.io"){
+        path = "/cv"
+    }
+    else {
+        path = "/my-work"
+    }
+
     let title
    
-    if(location.pathname == "/my-work/index.html"){
+    if(location.pathname == `${path}/index.html`){
         myWork = workPortfolio
         title = ['Hi! ' ,'my name is Belu,', 'frontend developer' ,' and this is my work...']
     }
-    if(location.pathname == "/my-work/index-es.html"){
+    if(location.pathname == `${path}/index-es.html`){
         myWork = workPortfolioEsp
         title = ['Hola! ' ,'soy Belu, ','programadora frontend ',' y este es mi trabajo...']
     }
