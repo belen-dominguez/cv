@@ -15,8 +15,6 @@ window.addEventListener('load', () => {
     fetchWork(myWork)
 })
 
-
-
 const heroTitle = document.querySelector('.hero .detail h1');
 
 const titleEffect =  (title) => {
@@ -55,6 +53,20 @@ const titleEffect =  (title) => {
    
 }
 
+const changeLang = document.querySelector('.lang');
+
+changeLang.addEventListener('click', (e) => {
+
+    if(location.pathname == "/my-work/index.html"){
+        location.pathname = "/my-work/index-es.html"
+     
+    }
+    else {
+        location.pathname = "/my-work/index.html"
+     
+    }
+   
+})
 
 /*for pagination*/
 let splitArr = [] ;
@@ -161,18 +173,15 @@ const changePage = (e, nro) => {
 }
 
 
+/*disable flipcard when clicking social links*/
+const socialLinks = document.querySelector('.presentation-card .social');
 
-const changeLang = document.querySelector('.lang');
-
-changeLang.addEventListener('click', (e) => {
-
-    if(location.pathname == "/my-work/index.html"){
-        location.pathname = "/my-work/index-es.html"
-     
-    }
-    else {
-        location.pathname = "/my-work/index.html"
-     
-    }
-   
+socialLinks.addEventListener('mouseenter', () => {
+    card.removeEventListener('click', flipCard)
+    card.style.cursor = 'initial'
 })
+socialLinks.addEventListener('mouseleave', () => {
+    card.addEventListener('click', flipCard)
+    card.style.cursor = 'pointer'
+})
+

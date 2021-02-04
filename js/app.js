@@ -117,11 +117,12 @@ workDiv.addEventListener('animationend', () => {
 })
 
 
+const card = document.querySelector('.inner-card');
 const flipCard = () => {
-    const card = document.querySelector('.inner-card');
-
     card.classList.toggle('twist')
 }
+card.addEventListener('click', flipCard)
+
 
 const openNav = () => {
     const navMobile = document.querySelector('.header-container nav');
