@@ -4,7 +4,7 @@ const workPortfolio = [
         type: "react",
         name: "Movies",
         img: "./imgs/react_movies.jpg",
-        img_large: "./imgs/large/movies-large.jpg",
+        img_large: ["./imgs/large/movies-large.jpg", "./imgs/large/movie-mobile-large1.jpg"],
         link: "https://belen-dominguez.github.io/React_TP-Movies/#/",
         status: "Completed",
         description:"Final ADA ITW project. Search and checkout latest movies and series. Implemented: API, axios, react router and others."
@@ -14,7 +14,7 @@ const workPortfolio = [
         type: "react",
         name: "Music Player",
         img: "./imgs/react-musicPLayer.jpg",
-        img_large: "./imgs/large/music-player-large.jpg",
+        img_large: ["./imgs/large/music-player-large.jpg", "./imgs/large/music-player-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/React-MusicPlayer/",
         status: "Completed",
         description: "Playing with React JS. Developing a music player with a library of music."
@@ -94,7 +94,7 @@ const workPortfolio = [
         type: "javascript",
         name: "Book Store",
         img: "./imgs/bookstore-preview.jpg",
-        img_large: "./imgs/large/book-store-large1.jpg",
+        img_large: ["./imgs/large/book-store-large1.jpg", "./imgs/large/book-store-large2.jpg"],
         link: "https://belen-dominguez.github.io/practicas/27-book-store-app/",
         status: "Completed",
         description:"Playing with Javascript & Api's, getting book's information based on categories and names. Implemented search input and Favorites section!"
@@ -124,7 +124,7 @@ const workPortfolio = [
         type: "javascript",
         name: "Kittens API",
         img: "./imgs/gatitos-preview.jpg",
-        img_large: "./imgs/large/buscador-gatitos-large1.jpg",
+        img_large: ["./imgs/large/buscador-gatitos-large1.jpg", "./imgs/large/buscador-gatitos-large2.jpg","./imgs/large/buscador-gatitos-large3.jpg"],
         link: "https://belen-dominguez.github.io/ada_itw/21-Busqueda_gatitos/",
         status: "Completed",
         description:"Javascript ADA-ITW project. Implementing api's, search & filter kitten breed, beautiful kitten images <3. Great project! "
@@ -144,7 +144,7 @@ const workPortfolio = [
         type: "javascript",
         name: "Sales App",
         img: "./imgs/VentaPc-preview.jpg",
-        img_large: "./imgs/large/sales-large1.jpg",
+        img_large: ["./imgs/large/sales-large1.jpg", "./imgs/large/sales-large2.jpg"],
         link: "https://belen-dominguez.github.io/ada_itw/18-Ventas-PC/",
         status: "Completed",
         description:"Javascript ADA-ITW project. Creating a sales administration app."
@@ -184,7 +184,7 @@ const workPortfolio = [
         type: "html",
         name: "Pricing Table",
         img: "./imgs/pricing-preview.jpg",
-        img_large: "./imgs/large/pricing-large.jpg",
+        img_large: ["./imgs/large/pricing-large.jpg", "./imgs/large/pricing-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/15-Pricing/",
         status: "Completed",
         description:"Practising HTML & CSS, mobile responsive."
@@ -224,7 +224,7 @@ const workPortfolio = [
         type: "html",
         name: "Fylo Dark Landing",
         img: "./imgs/fylodark-preview.jpg",
-        img_large: "./imgs/large/fylo-dark-large.jpg",
+        img_large: ["./imgs/large/fylo-dark-large.jpg","./imgs/large/fylo-dark-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/10-Fylodark_landing/",
         status: "Completed",
         description:"Practising HTML & CSS, mobile responsive, creating landing pages. Some of my first works."
@@ -234,7 +234,7 @@ const workPortfolio = [
         type: "html",
         name: "Bookmark Landing",
         img: "./imgs/bookmark-preview.jpg",
-        img_large: "./imgs/large/bookmark-large.jpg",
+        img_large: ["./imgs/large/bookmark-large.jpg", "./imgs/large/bookmark-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/16-Bookmark-landing/",
         status: "Completed",
         description:"Practising HTML & CSS, mobile responsive, creating landing pages. Some of my first works."
@@ -244,7 +244,7 @@ const workPortfolio = [
         type: "html",
         name: "Social Media Dashboard",
         img: "./imgs/social-preview.jpg",
-        img_large: "./imgs/large/social-dash-large1.jpg",
+        img_large: ["./imgs/large/social-dash-large1.jpg", "./imgs/large/social-dash-large2.jpg", "./imgs/large/social-dash-mobile-large1.jpg"],
         link: "https://belen-dominguez.github.io/practicas/06-social-media/index.html",
         status: "Completed",
         description:"Creating landing pages. Practising HTML & CSS. Switching template styles. Mobile responsive. Some of my first works."
@@ -254,7 +254,7 @@ const workPortfolio = [
         type: "html",
         name: "Four Card Landing",
         img: "./imgs/fourCard-preview.jpg",
-        img_large: "./imgs/large/four-card-large.jpg",
+        img_large: ["./imgs/large/four-card-large.jpg", "./imgs/large/four-card-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/09-Four-card_landing/",
         status: "Completed",
         description: "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts."
@@ -274,7 +274,7 @@ const workPortfolio = [
         type: "html",
         name: "Usance Landing",
         img: "./imgs/usance-preview.jpg",
-        img_large: "./imgs/large/usance-large.jpg",
+        img_large: ["./imgs/large/usance-large.jpg", "./imgs/large/usance-mobile-lareg.jpg"],
         link: "https://belen-dominguez.github.io/practicas/18-Usance-landing/",
         status: "Complete",
         description: 'Creating landing pages. Practising HTML & CSS. Switching template styles. Mobile responsive. Some of my first works.'

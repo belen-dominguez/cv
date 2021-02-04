@@ -175,17 +175,85 @@ const closeWork = () => {
     individualMainDiv.classList.remove('displayWork');
 }
 
+
+const closeImgModal = () => {
+    imgLargeDiv.style.display= "none"
+}
+
+const imgLargeDiv = document.querySelector('.image-large');
 const openImage = (id) => {
-    const imgLargeDiv = document.querySelector('.image-large');
     imgLargeDiv.style.display= "block"
 
-    imgLargeDiv.addEventListener('click', () => {
-        imgLargeDiv.style.display= "none"
-    })
+    imgLargeDiv.addEventListener('click',closeImgModal )
 
     let work = workPortfolio.filter(item => item.id == id)[0];
-    imgLargeDiv.innerHTML = `
-      <img src="${work.img_large}" alt="${work.name}">
-    `
 
+    
+
+    if(typeof(work.img_large) != 'string') {
+        slideImages(work)
+    }
+    else {
+        imgLargeDiv.innerHTML = `
+          <img src="${work.img_large}" alt="${work.name}">
+        `
+    }
+}
+
+
+
+let arrayImg = []
+let index;
+const slideImages = (work) => {
+
+    imgLargeDiv.removeEventListener('click',closeImgModal )
+
+    arrayImg = work.img_large;
+    index = 0
+
+    imgLargeDiv.innerHTML = `
+            <i class="far fa-times-circle" onclick="closeImgModal()"></i>
+            <div class="arrows">
+                <i class="fas fa-chevron-left" onclick="changeImg(-1)"></i>
+                <i class="fas fa-chevron-right" onclick="changeImg(+1)"></i>
+            </div>
+            <img src="${work.img_large[index]}" alt="${work.name}">
+        
+                `
+}
+const changeImg = (nr) => {
+ 
+    index = index + nr;
+
+    if(index == -1){
+        index = arrayImg.length -1
+    }
+    if(index == arrayImg.length ){
+        index = 0
+    }
+
+    if(arrayImg[index].includes('mobile')){
+        console.log('mobile')
+
+        imgLargeDiv.innerHTML = `
+            <i class="far fa-times-circle" onclick="closeImgModal()"></i>
+            <div class="arrows">
+                <i class="fas fa-chevron-left" onclick="changeImg(-1)"></i>
+                <i class="fas fa-chevron-right" onclick="changeImg(+1)"></i>
+            </div>
+            <img class="mobile-img" src="${arrayImg[index]}" alt="">
+                `
+    }
+    else {
+
+        imgLargeDiv.innerHTML = `
+                <i class="far fa-times-circle" onclick="closeImgModal()"></i>
+                <div class="arrows">
+                    <i class="fas fa-chevron-left" onclick="changeImg(-1)"></i>
+                    <i class="fas fa-chevron-right" onclick="changeImg(+1)"></i>
+                </div>
+                <img src="${arrayImg[index]}" alt="">
+                    `
+    }
+  
 }
