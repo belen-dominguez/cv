@@ -143,12 +143,27 @@ const openNav = () => {
 const individualMainDiv = document.querySelector('.individual-work');
 
 const displayIndividualProject = (id) => {
-    // let work = workPortfolio.filter(item => item.id == id)[0];
+  
     let work = myWork.filter(item => item.id == id)[0];
 
     individualMainDiv.classList.add('displayWork');
 
     const individualDiv = document.querySelector('.container-work');
+
+    let type = work.type.toUpperCase()
+    if(type == "HTML"){
+        type = "HTML & CSS"
+    }
+
+    let lang = document.documentElement.attributes.lang.value;
+    let description = "Description";
+    let develop = "Developed with";
+    let checkStr = "Check it Out!";
+    if(lang == 'es'){
+        description = "Descripción";
+        develop = "Desarrollo con";
+        checkStr = "Ver trabajo!"
+    }
 
     individualDiv.innerHTML = `
         <div class="description">
@@ -157,13 +172,13 @@ const displayIndividualProject = (id) => {
                     <i class="fas fa-chevron-left" onclick="changeWork(${work.id}, -1)"></i>
                     <i class="fas fa-chevron-right" onclick="changeWork(${work.id}, +1)"></i>
                 </div>
-                <h2>Project #${work.id}</h2>
+                <h2>Project #${(work.id) + 1}</h2>
             </div>
             <h2> ${work.name}</h2>
-            <p>Developed with:  ${work.type}</p>
-            <p>Description:  ${work.description}</p>  
-            <p>Status: ${work.status}</p>
-            <a href="${work.link}" target="_blank"> Check it Out!</a>
+            <p><strong>${develop}</strong>:  ${type}</p>
+            <p><strong>${description}</strong>:  ${work.description}</p>  
+            <p><strong>Status</strong>: ${work.status}</p>
+            <a href="${work.link}" target="_blank"> ${checkStr}</a>
         </div>
         <div class="image" onclick="openImage(${work.id})">
                 <img src="${work.img}" alt="${work.name}">
@@ -187,10 +202,7 @@ const openImage = (id) => {
 
     imgLargeDiv.addEventListener('click',closeImgModal )
 
-    // let work = workPortfolio.filter(item => item.id == id)[0];
     let work = myWork.filter(item => item.id == id)[0];
-
-    
 
     if(typeof(work.img_large) != 'string') {
         slideImages(work)

@@ -12,7 +12,6 @@ window.addEventListener('load', () => {
     }
 
     titleEffect(title)
-    // fetchWork(workPortfolio)
     fetchWork(myWork)
 })
 
@@ -77,11 +76,9 @@ const fetchWork = (e) => {
     }
 
     if(id == 'all'){
-        //  workToDisplay = workPortfolio
         workToDisplay = myWork
     }
     else {
-        // workToDisplay = workPortfolio.filter(item => item.type == id )
         workToDisplay = myWork.filter(item => item.type == id )
     }
 
@@ -103,12 +100,8 @@ const changeWork = (id , nr) => {
     let workId = id + nr;
 
     if(workId == -1){
-        // workId = workPortfolio.length -1
         workId = myWork.length -1
     }
-    // if(workId == workPortfolio.length){
-    //     workId = 0;
-    // }
     if(workId == myWork.length){
         workId = 0;
     }
@@ -171,15 +164,15 @@ const changePage = (e, nro) => {
 
 const changeLang = document.querySelector('.lang');
 
-changeLang.addEventListener('click', () => {
+changeLang.addEventListener('click', (e) => {
 
     if(location.pathname == "/my-work/index.html"){
         location.pathname = "/my-work/index-es.html"
-       
+     
     }
     else {
         location.pathname = "/my-work/index.html"
-      
+     
     }
    
 })
