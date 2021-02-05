@@ -119,7 +119,7 @@ header nav a:hover {
     margin: 0 auto;
 }
 .hero .detail, .hero .img {
-    width: 40%;
+    width: 50%;
 }
 .hero .detail h1 {
     font-size: 40px;

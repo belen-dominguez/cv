@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
     }
     if(location.pathname == `${path}/index-es.html`){
         myWork = workPortfolioEsp
-        title = ['Hola! ' ,'soy Belu, ','programadora frontend ',' y este es mi trabajo...']
+        title = ['Hola! ' ,'soy Belu, ','programadora frontend ',' y estos son mis trabajos...']
     }
 
     titleEffect(title)
