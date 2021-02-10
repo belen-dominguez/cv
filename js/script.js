@@ -89,6 +89,34 @@ changeLang.addEventListener('click', (e) => {
 let splitArr = [] ;
 const paginationDiv = document.querySelector('.pag-container');
 
+const checkDate = (workToDisplay) => {
+    let currentDate = new Date();
+    let priorityCk = 1
+    workToDisplay.forEach(item => {
+        if(item.date){
+            /*86400000 son la cant de milisegundos en 1 dia */
+            let day = new Date(item.date) /*dia  del item */
+            let difference = currentDate - day /*diferencia entre el dia del item y la fecha actual en milisegundos*/
+            let diffInDays = Math.floor(difference / 86400000) /*sacamos la diferencia en cantidad de dias*/
+
+            if(diffInDays < 10) {
+                item.badge = true
+                item.priority = priorityCk++
+            }
+
+        }
+        else {
+            item.priority = 1 
+        }
+    })
+
+    let sortArrByNewWork = workToDisplay.sort((a,b) => {
+        return  b.priority - a.priority 
+
+    })
+
+   return sortArrByNewWork
+}
 
 const fetchWork = (e) => {
 
@@ -111,6 +139,8 @@ const fetchWork = (e) => {
         workToDisplay = myWork.filter(item => item.type == id )
     }
 
+    /*sort by new items*/
+    workToDisplay = checkDate(workToDisplay)
 
     if(workToDisplay.length > 10){
         splitArr = [] 

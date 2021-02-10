@@ -98,6 +98,7 @@ const openDescription = (e) => {
      workDiv.innerHTML = workToDisplay.reduce((html, item) => {
          return html += `
          <div class="work-item">
+            <div class="${item.badge ? 'badge' : ""}">${item.badge ? 'New' : ""}</div>
             <a href="#work-item" id="${item.id}" onclick="displayIndividualProject(${item.id})">
                 <img src="${item.img}" alt="${item.name}">
                 <div class="text">

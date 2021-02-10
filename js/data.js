@@ -17,7 +17,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/music-player-large.jpg", "./imgs/large/music-player-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/React-MusicPlayer/",
         status: "Completed",
-        description: "Practicing with React JS. Developing a music player with a library of music."
+        description: "Practicing with React JS. Developing a music player with a library of music.",
+        date: '8/2/2021'
     },
     {
         id: 2,
@@ -27,7 +28,8 @@ const workPortfolio = [
         img_large: "./imgs/large/portfolio-large.jpg",
         link: "https://belen-dominguez.github.io/react-portfolio-app/#/",
         status: "Completed",
-        description: "Practicing with React JS, developing a portfolio. Implemented: react router, animations with framer motion, styled components, etc. "
+        description: "Practicing with React JS, developing a portfolio. Implemented: react router, animations with framer motion, styled components, etc. ",
+        date: '9/2/2021'
     },
     {
         id: 3,
@@ -47,7 +49,8 @@ const workPortfolio = [
         img_large: "./imgs/large/memotest-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/30-memotest/",
         status: "Completed",
-        description:" Practicing with Javascript. Developing a memotest game. In local storage best score is saved. You can access the history of your current games and total amount of points."
+        description:" Practicing with Javascript. Developing a memotest game. In local storage best score is saved. You can access the history of your current games and total amount of points.",
+        date: '9/2/2021'
     },
     {
         id: 5,
@@ -57,7 +60,8 @@ const workPortfolio = [
         img_large: "./imgs/large/weather-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/28-weather-app/",
         status: "Completed",
-        description: "Practicing with Javascript. Developing a weather app witch also displays information of countries. Fun Project!!"
+        description: "Practicing with Javascript. Developing a weather app witch also displays information of countries. Fun Project!!",
+        date: '9/2/2021'
     },
     {
         id: 6,
@@ -277,8 +281,19 @@ const workPortfolio = [
         img_large: ["./imgs/large/usance-large.jpg", "./imgs/large/usance-mobile-lareg.jpg"],
         link: "https://belen-dominguez.github.io/practicas/18-Usance-landing/",
         status: "Complete",
-        description: 'Creating landing pages. Practising HTML & CSS. Mobile responsive. Some of my first works.'
+        description: 'Creating landing pages. Practising HTML & CSS. Mobile responsive. Some of my first works.',
     },
+    {
+        id: 28,
+        type: "javascript",
+        name: "Puzzle App",
+        img: "./imgs/puzzle-preview.jpg",
+        img_large: ["./imgs/large/puzzle-large2.jpg","./imgs/large/puzzle-large1.jpg",  "./imgs/large/puzzle-large3.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/31-puzzle-app/",
+        status: "Complete",
+        description: 'For Desktop. Research and practice of drag and drop API.',
+        date: '9/2/2021'
+    }
 
 ]
 
@@ -303,7 +318,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/music-player-large.jpg", "./imgs/large/music-player-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/React-MusicPlayer/",
         status: "Terminado",
-        description: "Practicando React JS. Desarrollo de un reproductor de música, con su librería de canciones."
+        description: "Practicando React JS. Desarrollo de un reproductor de música, con su librería de canciones.",
+        date: '9/2/2021'
     },
     {
         id: 2,
@@ -313,7 +329,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/portfolio-large.jpg",
         link: "https://belen-dominguez.github.io/react-portfolio-app/#/",
         status: "Terminado",
-        description: "Practicando React JS, desarrollo de un portfolio. Se implementó: react router, animaciones con framer motion, styled components, etc. "
+        description: "Practicando React JS, desarrollo de un portfolio. Se implementó: react router, animaciones con framer motion, styled components, etc. ",
+        date: '9/2/2021'
     },
     {
         id: 3,
@@ -333,7 +350,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/memotest-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/30-memotest/",
         status: "Terminado",
-        description:" Practicando Javascript. Desarrollo del juego memotest. En el mismo se guarda de forma local la mejor puntuación. Se puede acceder al historial de juegos en la sesión corriente, como también la suma total de puntos."
+        description:" Practicando Javascript. Desarrollo del juego memotest. En el mismo se guarda de forma local la mejor puntuación. Se puede acceder al historial de juegos en la sesión corriente, como también la suma total de puntos.",
+        date: '9/2/2021'
     },
     {
         id: 5,
@@ -343,7 +361,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/weather-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/28-weather-app/",
         status: "Terminado",
-        description: "Practicando Javascript. Desarrollo de aplicación sobre el clima, la cual también muestra información sobre los países. Excelente proyecto!!"
+        description: "Practicando Javascript. Desarrollo de aplicación sobre el clima, la cual también muestra información sobre los países. Excelente proyecto!!",
+        date: '9/2/2021'
     },
     {
         id: 6,
@@ -564,6 +583,17 @@ const workPortfolioEsp = [
         link: "https://belen-dominguez.github.io/practicas/18-Usance-landing/",
         status: "Terminado",
         description: 'Creando landing pages. Practicando HTML & CSS.  De mis primeros trabajos.'
+    },
+    {
+        id: 28,
+        type: "javascript",
+        name: "Puzzle App",
+        img: "./imgs/puzzle-preview.jpg",
+        img_large: ["./imgs/large/puzzle-large2.jpg","./imgs/large/puzzle-large1.jpg",  "./imgs/large/puzzle-large3.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/31-puzzle-app/",
+        status: "Terminado",
+        description: 'Para Desktop. Practicando drag and drop.',
+        date: '9/2/2021'
     },
 
 ]
