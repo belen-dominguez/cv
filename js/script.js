@@ -99,7 +99,7 @@ const checkDate = (workToDisplay) => {
             let difference = currentDate - day /*diferencia entre el dia del item y la fecha actual en milisegundos*/
             let diffInDays = Math.floor(difference / 86400000) /*sacamos la diferencia en cantidad de dias*/
 
-           console.log(day)
+       
             if(diffInDays < 30) {
                 item.badge = true
                 item.priority = priorityCk++
@@ -109,14 +109,14 @@ const checkDate = (workToDisplay) => {
         else {
             item.priority = 1 
         }
-       // console.log(item.name, item.priority)
+   
     })
 
     let sortArrByNewWork = workToDisplay.sort((a,b) => {
         return  b.priority - a.priority 
 
     })
-    console.log(workToDisplay)
+  
 
    return sortArrByNewWork
 }
