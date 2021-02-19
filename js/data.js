@@ -4,7 +4,7 @@ const workPortfolio = [
         type: "react",
         name: "Movies",
         img: "./imgs/react_movies.jpg",
-        img_large: ["./imgs/large/movies-large.jpg", "movie-mobile-large1.jpg"],
+        img_large: ["./imgs/large/movies-large.jpg", "./imgs/large/movie-mobile-large1.jpg"],
         link: "https://belen-dominguez.github.io/React_TP-Movies/#/",
         status: "Completed",
         description:"Final ADA ITW project. Search and checkout latest movies and series. Implemented: API, axios, react router and others."
@@ -18,7 +18,7 @@ const workPortfolio = [
         link: "https://belen-dominguez.github.io/React-MusicPlayer/",
         status: "Completed",
         description: "Practicing with React JS. Developing a music player with a library of music.",
-        date: '8/2/2021'
+        date: '2/8/2021'
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const workPortfolio = [
         link: "https://belen-dominguez.github.io/react-portfolio-app/#/",
         status: "Completed",
         description: "Practicing with React JS, developing a portfolio. Implemented: react router, animations with framer motion, styled components, etc. ",
-        date: '9/2/2021'
+        date: '2/9/2021'
     },
     {
         id: 3,
@@ -50,7 +50,7 @@ const workPortfolio = [
         link: "https://belen-dominguez.github.io/practicas/30-memotest/",
         status: "Completed",
         description:" Practicing with Javascript. Developing a memotest game. In local storage best score is saved. You can access the history of your current games and total amount of points.",
-        date: '9/2/2021'
+        date: '2/9/2021'
     },
     {
         id: 5,
@@ -61,7 +61,7 @@ const workPortfolio = [
         link: "https://belen-dominguez.github.io/practicas/28-weather-app/",
         status: "Completed",
         description: "Practicing with Javascript. Developing a weather app witch also displays information of countries. Fun Project!!",
-        date: '9/2/2021'
+        date: '2/9/2021'
     },
     {
         id: 6,
@@ -292,8 +292,30 @@ const workPortfolio = [
         link: "https://belen-dominguez.github.io/practicas/31-puzzle-app/",
         status: "Complete",
         description: 'For Desktop. Research and practice of drag and drop API.',
-        date: '9/2/2021'
-    }
+        date: '2/9/2021'
+    },
+    {
+        id: 29,
+        type: "javascript",
+        name: "Sliding Puzzle App",
+        img: "./imgs/slidingPuzzle-preview.jpg",
+        img_large: ["./imgs/large/slidingPuzzle-large.jpg","./imgs/large/slidingPuzzle-large2.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/32-sliding-puzzle",
+        status: "Complete",
+        description: 'For Desktop. Practising JS, Sliding puzzle.',
+        date: '2/17/2021'
+    },
+    {
+        id: 30,
+        type: "javascript",
+        name: "Landing with Animations",
+        img: "./imgs/landingAnimations-preview.jpg",
+        img_large: ["./imgs/large/landingAnimations-large.jpg","./imgs/large/landingAnimations-large2.jpg", "./imgs/large/landingAnimations-mobile-large.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/33-landing-animations",
+        status: "Terminado",
+        description: 'Practising JS and animations. Mobile responsibe.',
+        date: '2/17/2021'
+    },
 
 ]
 
@@ -319,7 +341,7 @@ const workPortfolioEsp = [
         link: "https://belen-dominguez.github.io/React-MusicPlayer/",
         status: "Terminado",
         description: "Practicando React JS. Desarrollo de un reproductor de música, con su librería de canciones.",
-        date: '9/2/2021'
+        date: '2/9/2021'
     },
     {
         id: 2,
@@ -330,7 +352,7 @@ const workPortfolioEsp = [
         link: "https://belen-dominguez.github.io/react-portfolio-app/#/",
         status: "Terminado",
         description: "Practicando React JS, desarrollo de un portfolio. Se implementó: react router, animaciones con framer motion, styled components, etc. ",
-        date: '9/2/2021'
+        date: '2/9/2021'
     },
     {
         id: 3,
@@ -351,7 +373,7 @@ const workPortfolioEsp = [
         link: "https://belen-dominguez.github.io/practicas/30-memotest/",
         status: "Terminado",
         description:" Practicando Javascript. Desarrollo del juego memotest. En el mismo se guarda de forma local la mejor puntuación. Se puede acceder al historial de juegos en la sesión corriente, como también la suma total de puntos.",
-        date: '9/2/2021'
+        date: '2/9/2021'
     },
     {
         id: 5,
@@ -362,7 +384,7 @@ const workPortfolioEsp = [
         link: "https://belen-dominguez.github.io/practicas/28-weather-app/",
         status: "Terminado",
         description: "Practicando Javascript. Desarrollo de aplicación sobre el clima, la cual también muestra información sobre los países. Excelente proyecto!!",
-        date: '9/2/2021'
+        date: '2/9/2021'
     },
     {
         id: 6,
@@ -593,7 +615,29 @@ const workPortfolioEsp = [
         link: "https://belen-dominguez.github.io/practicas/31-puzzle-app/",
         status: "Terminado",
         description: 'Para Desktop. Practicando drag and drop.',
-        date: '9/2/2021'
+        date: '2/9/2021'
+    },
+    {
+        id: 29,
+        type: "javascript",
+        name: "Sliding Puzzle App",
+        img: "./imgs/slidingPuzzle-preview.jpg",
+        img_large: ["./imgs/large/slidingPuzzle-large.jpg","./imgs/large/slidingPuzzle-large2.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/32-sliding-puzzle",
+        status: "Terminado",
+        description: 'Para Desktop. Practicando JS, Rompecabezas deslizante.',
+        date: '2/17/2021'
+    },
+    {
+        id: 30,
+        type: "javascript",
+        name: "Landing con Animaciones",
+        img: "./imgs/landingAnimations-preview.jpg",
+        img_large: ["./imgs/large/landingAnimations-large.jpg","./imgs/large/landingAnimations-large2.jpg", "./imgs/large/landingAnimations-mobile-large.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/33-landing-animations",
+        status: "Terminado",
+        description: 'Practicando JS y animaciones. Adaptado a mobile.',
+        date: '2/17/2021'
     },
 
 ]

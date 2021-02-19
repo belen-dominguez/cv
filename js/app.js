@@ -249,8 +249,7 @@ const changeImg = (nr) => {
     }
 
     if(arrayImg[index].includes('mobile')){
-        console.log('mobile')
-
+      
         imgLargeDiv.innerHTML = `
             <i class="far fa-times-circle" onclick="closeImgModal()"></i>
             <div class="arrows">
