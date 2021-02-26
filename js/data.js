@@ -312,9 +312,20 @@ const workPortfolio = [
         img: "./imgs/landingAnimations-preview.jpg",
         img_large: ["./imgs/large/landingAnimations-large.jpg","./imgs/large/landingAnimations-large2.jpg", "./imgs/large/landingAnimations-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/33-landing-animations",
-        status: "Terminado",
+        status: "Complete",
         description: 'Practising JS and animations. Mobile responsibe.',
         date: '2/17/2021'
+    },
+    {
+        id: 31,
+        type: "javascript",
+        name: "Trello Clone",
+        img: "./imgs/trello-clone-preview.jpg",
+        img_large: ["./imgs/large/trello-clone-large1.jpg","./imgs/large/trello-clone-large2.jpg", "./imgs/large/trello-clone-large3.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/34- Dnd-app",
+        status: "Complete",
+        description: 'Practising JS and Drag and Drop API. A trello clone, only for desktop.',
+        date: '2/26/2021'
     },
 
 ]
@@ -638,6 +649,17 @@ const workPortfolioEsp = [
         status: "Terminado",
         description: 'Practicando JS y animaciones. Adaptado a mobile.',
         date: '2/17/2021'
+    },
+    {
+        id: 31,
+        type: "javascript",
+        name: "Trello Clone",
+        img: "./imgs/trello-clone-preview.jpg",
+        img_large: ["./imgs/large/trello-clone-large1.jpg","./imgs/large/trello-clone-large2.jpg", "./imgs/large/trello-clone-large3.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/34-Dnd-app",
+        status: "Terminado",
+        description: 'Practicando JS y Drag and Drop API. Clon de Trello, solo desktop.',
+        date: '2/26/2021'
     },
 
 ]
