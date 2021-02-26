@@ -142,6 +142,24 @@ const openNav = () => {
 
 
 /*display indivifual work*/
+const formatDate = (date) => {
+    let lang = document.documentElement.attributes.lang.value;
+
+    let getDate = new Date(date);
+    let year = getDate.getFullYear();
+    let day = getDate.getDate();
+    let getMonth = getDate.getMonth();
+
+    let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dic'];
+    if(lang == 'es'){
+        months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+    }
+    let month = months[getMonth];
+
+    return `${day} ${month} ${year}`
+    
+}
+
 const individualMainDiv = document.querySelector('.individual-work');
 
 const displayIndividualProject = (id) => {
@@ -157,14 +175,18 @@ const displayIndividualProject = (id) => {
         type = "HTML & CSS"
     }
 
+    let dateFormat = formatDate(work.date)
+
     let lang = document.documentElement.attributes.lang.value;
     let description = "Description";
     let develop = "Developed with";
     let checkStr = "Check it Out!";
+    let date = "Date";
     if(lang == 'es'){
         description = "Descripción";
         develop = "Desarrollo con";
-        checkStr = "Ver trabajo!"
+        checkStr = "Ver trabajo!";
+        date = "Fecha";
     }
 
     individualDiv.innerHTML = `
@@ -179,6 +201,7 @@ const displayIndividualProject = (id) => {
             <h2> ${work.name}</h2>
             <p><strong>${develop}</strong>:  ${type}</p>
             <p><strong>${description}</strong>:  ${work.description}</p>  
+            <p><strong>${date}</strong>: ${dateFormat}</p>
             <p><strong>Status</strong>: ${work.status}</p>
             <a href="${work.link}" target="_blank"> ${checkStr}</a>
         </div>

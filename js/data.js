@@ -7,7 +7,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/movies-large.jpg", "./imgs/large/movie-mobile-large1.jpg"],
         link: "https://belen-dominguez.github.io/React_TP-Movies/#/",
         status: "Completed",
-        description:"Final ADA ITW project. Search and checkout latest movies and series. Implemented: API, axios, react router and others."
+        description:"Final ADA ITW project. Search and checkout latest movies and series. Implemented: API, axios, react router and others.",
+        date: "5/20/2020"
     },
     {
         id: 1,
@@ -39,7 +40,8 @@ const workPortfolio = [
         img_large: "./imgs/large/todo-large.jpg",
         link: "https://belen-dominguez.github.io/React_TP-todoList/",
         status: "Completed",
-        description: "First ADA ITW react project. A todo list."
+        description: "First ADA ITW react project. A todo list.",
+        date: "5/20/2020"
     },
     {
         id: 4,
@@ -71,7 +73,8 @@ const workPortfolio = [
         img_large: "./imgs/large/multi-form-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/25-multi-step-form/",
         status: "Completed",
-        description: "Developing a multi step form for a service company"
+        description: "Developing a multi step form for a service company",
+        date: "5/20/2020"
     },
     {
         id: 7,
@@ -81,7 +84,8 @@ const workPortfolio = [
         img_large: "./imgs/large/sign-up-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/29-sign-up-page/",
         status: "Completed",
-        description: "Trying different things with the password input."
+        description: "Trying different things with the password input.",
+        date: "5/20/2020"
     },
     {
         id: 8,
@@ -91,7 +95,8 @@ const workPortfolio = [
         img_large: "./imgs/large/jobListin-api-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/26-job-listing/",
         status: "Completed",
-        description: "Practicing with Javascript & Api's, getting job positions from diferent countries. Implementing filters."
+        description: "Practicing with Javascript & Api's, getting job positions from diferent countries. Implementing filters.",
+        date: "1/20/2021"
     },
     {
         id: 9,
@@ -101,7 +106,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/book-store-large1.jpg", "./imgs/large/book-store-large2.jpg"],
         link: "https://belen-dominguez.github.io/practicas/27-book-store-app/",
         status: "Completed",
-        description:"Practicing with Javascript & Api's, getting book's information based on categories and names. Implemented search input and Favorites section!"
+        description:"Practicing with Javascript & Api's, getting book's information based on categories and names. Implemented search input and Favorites section!",
+        date: "1/20/2021"
     },
     {
         id: 10,
@@ -111,7 +117,8 @@ const workPortfolio = [
         img_large: "./imgs/large/slideshow-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/24-slideshow/",
         status: "Completed",
-        description: "Own javascript development for tabs and slideshows, adjusting images width's. Fun project!!"
+        description: "Own javascript development for tabs and slideshows, adjusting images width's. Fun project!!",
+        date: "1/20/2021"
     },
     {
         id: 11,
@@ -121,7 +128,8 @@ const workPortfolio = [
         img_large: "./imgs/large/breaking-bad-large.jpg",
         link: "https://belen-dominguez.github.io/ada_itw/19-BreakingBad_API/",
         status: "Completed",
-        description:"Javascript ADA-ITW project. Displaying characters, details & quotes with Api's"
+        description:"Javascript ADA-ITW project. Displaying characters, details & quotes with Api's",
+        date: "5/20/2020"
     },
     {
         id: 12,
@@ -131,7 +139,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/buscador-gatitos-large1.jpg", "./imgs/large/buscador-gatitos-large2.jpg","./imgs/large/buscador-gatitos-large3.jpg"],
         link: "https://belen-dominguez.github.io/ada_itw/21-Busqueda_gatitos/",
         status: "Completed",
-        description:"Javascript ADA-ITW project. Implementing api's, search & filter kitten breed, beautiful kitten images <3. Great project! "
+        description:"Javascript ADA-ITW project. Implementing api's, search & filter kitten breed, beautiful kitten images <3. Great project! ",
+        date: "5/20/2020"
     },
     {
         id: 13,
@@ -141,7 +150,8 @@ const workPortfolio = [
         img_large: "./imgs/large/array2d-large.jpg",
         link: "https://belen-dominguez.github.io/ada_itw/16-sublistas/",
         status: "Completed",
-        description:"Playing with Javascript and 2D arrays. Fun!!"
+        description:"Playing with Javascript and 2D arrays. Fun!!",
+        date: "5/20/2020"
     },
     {
         id: 14,
@@ -151,7 +161,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/sales-large1.jpg", "./imgs/large/sales-large2.jpg"],
         link: "https://belen-dominguez.github.io/ada_itw/18-Ventas-PC/",
         status: "Completed",
-        description:"Javascript ADA-ITW project. Creating a sales administration app."
+        description:"Javascript ADA-ITW project. Creating a sales administration app.",
+        date: "5/20/2020"
     },
     {
         id: 15,
@@ -161,7 +172,8 @@ const workPortfolio = [
         img_large: "./imgs/large/calc-large.jpg",
         link: "https://belen-dominguez.github.io/ada_itw/14-Calculadora/",
         status: "Completed",
-        description: "Javascript ADA-ITW project. Creating my own calculator."
+        description: "Javascript ADA-ITW project. Creating my own calculator.",
+        date: "5/20/2020"
     },
     {
         id: 16,
@@ -171,7 +183,8 @@ const workPortfolio = [
         img_large: "./imgs/large/mix-landing-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/19-Mix-landing/",
         status: "Completed",
-        description:"Practising HTML  & CSS, creating a landing page."
+        description:"Practising HTML  & CSS, creating a landing page.",
+        date: "5/20/2020"
     },
     {
         id: 17,
@@ -181,7 +194,8 @@ const workPortfolio = [
         img_large: "./imgs/large/key-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/22-Key-login/",
         status: "Completed",
-        description:"Practising HTML & CSS hacks with checkbox inputs."
+        description:"Practising HTML & CSS hacks with checkbox inputs.",
+        date: "5/20/2020"
     },
     {
         id: 18,
@@ -191,7 +205,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/pricing-large.jpg", "./imgs/large/pricing-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/15-Pricing/",
         status: "Completed",
-        description:"Practising HTML & CSS, mobile responsive."
+        description:"Practising HTML & CSS, mobile responsive.",
+        date: "5/20/2020"
     },
     {
         id: 19,
@@ -201,7 +216,8 @@ const workPortfolio = [
         img_large: "./imgs/large/trendz-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/21-Trendz-login/",
         status: "Completed",
-        description:"Practising HTML & CSS, developing a login page."
+        description:"Practising HTML & CSS, developing a login page.",
+        date: "5/20/2020"
     },
     {
         id: 20,
@@ -211,7 +227,8 @@ const workPortfolio = [
         img_large: "./imgs/large/job-listing-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/14-Job-listings/",
         status: "Completed",
-        description:"Practising HTML & CSS, mobile responsive."
+        description:"Practising HTML & CSS, mobile responsive.",
+        date: "5/20/2020"
     },
     {
         id: 21,
@@ -221,7 +238,8 @@ const workPortfolio = [
         img_large: "./imgs/large/faq-landing-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/23-FAQ-page/",
         status: "Completed",
-        description:"Practising HTML & CSS hacks with checkbox inputs."
+        description:"Practising HTML & CSS hacks with checkbox inputs.",
+        date: "5/20/2020"
     },
     {
         id: 22,
@@ -231,7 +249,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/fylo-dark-large.jpg","./imgs/large/fylo-dark-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/10-Fylodark_landing/",
         status: "Completed",
-        description:"Practising HTML & CSS, mobile responsive, creating landing pages. Some of my first works."
+        description:"Practising HTML & CSS, mobile responsive, creating landing pages. Some of my first works.",
+        date: "5/20/2020"
     },
     {
         id: 23,
@@ -241,7 +260,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/bookmark-large.jpg", "./imgs/large/bookmark-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/16-Bookmark-landing/",
         status: "Completed",
-        description:"Practising HTML & CSS, mobile responsive, creating landing pages. Some of my first works."
+        description:"Practising HTML & CSS, mobile responsive, creating landing pages. Some of my first works.",
+        date: "5/20/2020"
     },
     {
         id: 24,
@@ -251,7 +271,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/social-dash-large1.jpg", "./imgs/large/social-dash-large2.jpg", "./imgs/large/social-dash-mobile-large1.jpg"],
         link: "https://belen-dominguez.github.io/practicas/06-social-media/index.html",
         status: "Completed",
-        description:"Creating landing pages. Practising HTML & CSS. Switching template styles. Mobile responsive. Some of my first works."
+        description:"Creating landing pages. Practising HTML & CSS. Switching template styles. Mobile responsive. Some of my first works.",
+        date: "5/20/2020"
     },
     {
         id: 25,
@@ -261,7 +282,8 @@ const workPortfolio = [
         img_large: ["./imgs/large/four-card-large.jpg", "./imgs/large/four-card-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/09-Four-card_landing/",
         status: "Completed",
-        description: "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts."
+        description: "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
+        date: "5/20/2020"
     },
     {
         id: 26,
@@ -271,7 +293,8 @@ const workPortfolio = [
         img_large: "./imgs/large/captivate-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/17-Captivate/",
         status: "Complete",
-        description:"Creating landing pages. Practising HTML & CSS.  Some of my first works."
+        description:"Creating landing pages. Practising HTML & CSS.  Some of my first works.",
+        date: "5/20/2020"
     },
     {
         id: 27,
@@ -282,6 +305,7 @@ const workPortfolio = [
         link: "https://belen-dominguez.github.io/practicas/18-Usance-landing/",
         status: "Complete",
         description: 'Creating landing pages. Practising HTML & CSS. Mobile responsive. Some of my first works.',
+        date: "5/20/2020"
     },
     {
         id: 28,
@@ -341,7 +365,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/movies-large.jpg", "./imgs/large/movie-mobile-large1.jpg"],
         link: "https://belen-dominguez.github.io/React_TP-Movies/#/",
         status: "Terminado",
-        description:"Trabajo final en ADA ITW. Buscador de películas. Se implementó: API, axios, react router and others."
+        description:"Trabajo final en ADA ITW. Buscador de películas. Se implementó: API, axios, react router and others.",
+        date: "5/20/2020"
     },
     {
         id: 1,
@@ -373,7 +398,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/todo-large.jpg",
         link: "https://belen-dominguez.github.io/React_TP-todoList/",
         status: "Terminado",
-        description: "Primer trabajo de React en ADA ITW. Una lista de tareas"
+        description: "Primer trabajo de React en ADA ITW. Una lista de tareas",
+        date: "5/20/2020"
     },
     {
         id: 4,
@@ -405,7 +431,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/multi-form-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/25-multi-step-form/",
         status: "Terminado",
-        description: "Desarrollo de un formulario con varios pasos para una emrpesa de servicios."
+        description: "Desarrollo de un formulario con varios pasos para una emrpesa de servicios.",
+        date: "1/20/2021"
     },
     {
         id: 7,
@@ -415,7 +442,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/sign-up-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/29-sign-up-page/",
         status: "Terminado",
-        description: "Implementando diferentes funciones en el campo de contraseña."
+        description: "Implementando diferentes funciones en el campo de contraseña.",
+        date: "5/20/2020"
     },
     {
         id: 8,
@@ -425,7 +453,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/jobListin-api-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/26-job-listing/",
         status: "Terminado",
-        description: "Practicando Javascript & Api's, buscando puestos de trabajo en diferentes países. Se implementaron filtros."
+        description: "Practicando Javascript & Api's, buscando puestos de trabajo en diferentes países. Se implementaron filtros.",
+        date: "1/20/2021"
     },
     {
         id: 9,
@@ -435,7 +464,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/book-store-large1.jpg", "./imgs/large/book-store-large2.jpg"],
         link: "https://belen-dominguez.github.io/practicas/27-book-store-app/",
         status: "Terminado",
-        description:"Practicando Javascript & Api's, solitando información de libros, búsquedas por categorías y nombres. Se implementó un buscador y una sección de favoritos!"
+        description:"Practicando Javascript & Api's, solitando información de libros, búsquedas por categorías y nombres. Se implementó un buscador y una sección de favoritos!",
+        date: "1/20/2021"
     },
     {
         id: 10,
@@ -445,7 +475,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/slideshow-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/24-slideshow/",
         status: "Terminado",
-        description: "Desarrollo propio en javascript de un módulo con tabs y slideshow. Por funciones ajustamos en display de la cantidad de imagenes a mostrar. Excelente proyecto!!"
+        description: "Desarrollo propio en javascript de un módulo con tabs y slideshow. Por funciones ajustamos en display de la cantidad de imagenes a mostrar. Excelente proyecto!!",
+        date: "1/20/2021"
     },
     {
         id: 11,
@@ -455,7 +486,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/breaking-bad-large.jpg",
         link: "https://belen-dominguez.github.io/ada_itw/19-BreakingBad_API/",
         status: "Terminado",
-        description:"Proyecto en javascript en ADA-ITW. Se muestran los personajes, citas, etc con la Api's"
+        description:"Proyecto en javascript en ADA-ITW. Se muestran los personajes, citas, etc con la Api's",
+        date: "5/20/2020"
     },
     {
         id: 12,
@@ -465,7 +497,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/buscador-gatitos-large1.jpg", "./imgs/large/buscador-gatitos-large2.jpg","./imgs/large/buscador-gatitos-large3.jpg"],
         link: "https://belen-dominguez.github.io/ada_itw/21-Busqueda_gatitos/",
         status: "Terminado",
-        description:"Proyecto en javascript, ADA-ITW. Implementando api's, buscador y filtros de gatitos. Hermoso proyecto! "
+        description:"Proyecto en javascript, ADA-ITW. Implementando api's, buscador y filtros de gatitos. Hermoso proyecto! ",
+        date: "5/20/2020"
     },
     {
         id: 13,
@@ -475,7 +508,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/array2d-large.jpg",
         link: "https://belen-dominguez.github.io/ada_itw/16-sublistas/",
         status: "Terminado",
-        description:"Practicando Javascript y arrays 2D. Divertido!!"
+        description:"Practicando Javascript y arrays 2D. Divertido!!",
+        date: "5/20/2020"
     },
     {
         id: 14,
@@ -485,7 +519,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/sales-large1.jpg", "./imgs/large/sales-large2.jpg"],
         link: "https://belen-dominguez.github.io/ada_itw/18-Ventas-PC/",
         status: "Terminado",
-        description:"Proyecto javascript en ADA-ITW. Creando una aplicación de administracón de ventas."
+        description:"Proyecto javascript en ADA-ITW. Creando una aplicación de administracón de ventas.",
+        date: "5/20/2020"
     },
     {
         id: 15,
@@ -495,7 +530,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/calc-large.jpg",
         link: "https://belen-dominguez.github.io/ada_itw/14-Calculadora/",
         status: "Terminado",
-        description: "Proyecto javascript en ADA-ITW. Desarrollando una calculadora."
+        description: "Proyecto javascript en ADA-ITW. Desarrollando una calculadora.",
+        date: "5/20/2020"
     },
     {
         id: 16,
@@ -505,7 +541,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/mix-landing-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/19-Mix-landing/",
         status: "Terminado",
-        description:"Practicando HTML  & CSS, creación de landing page."
+        description:"Practicando HTML  & CSS, creación de landing page.",
+        date: "5/20/2020"
     },
     {
         id: 17,
@@ -515,7 +552,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/key-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/22-Key-login/",
         status: "Terminado",
-        description:"Practicando HTML & hacks de CSS con checkbox."
+        description:"Practicando HTML & hacks de CSS con checkbox.",
+        date: "5/20/2020"
     },
     {
         id: 18,
@@ -525,7 +563,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/pricing-large.jpg", "./imgs/large/pricing-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/15-Pricing/",
         status: "Terminado",
-        description:"Practicando HTML & CSS, mobile responsive."
+        description:"Practicando HTML & CSS, mobile responsive.",
+        date: "5/20/2020"
     },
     {
         id: 19,
@@ -535,7 +574,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/trendz-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/21-Trendz-login/",
         status: "Terminado",
-        description:"Practicando HTML & CSS, creación de landing page."
+        description:"Practicando HTML & CSS, creación de landing page.",
+        date: "5/20/2020"
     },
     {
         id: 20,
@@ -545,7 +585,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/job-listing-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/14-Job-listings/",
         status: "Terminado",
-        description:"Practicando HTML & CSS, mobile responsive."
+        description:"Practicando HTML & CSS, mobile responsive.",
+        date: "5/20/2020"
     },
     {
         id: 21,
@@ -555,7 +596,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/faq-landing-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/23-FAQ-page/",
         status: "Terminado",
-        description:"Practicando HTML & hacks de CSS con checkbox."
+        description:"Practicando HTML & hacks de CSS con checkbox.",
+        date: "5/20/2020"
     },
     {
         id: 22,
@@ -565,7 +607,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/fylo-dark-large.jpg","./imgs/large/fylo-dark-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/10-Fylodark_landing/",
         status: "Terminado",
-        description:"Practicando HTML & CSS, mobile responsive, creando landing pages. De mis primeros trabajos."
+        description:"Practicando HTML & CSS, mobile responsive, creando landing pages. De mis primeros trabajos.",
+        date: "5/20/2020"
     },
     {
         id: 23,
@@ -575,7 +618,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/bookmark-large.jpg", "./imgs/large/bookmark-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/16-Bookmark-landing/",
         status: "Terminado",
-        description:"Practicando HTML & CSS, mobile responsive, creando landing pages. De mis primeros trabajos."
+        description:"Practicando HTML & CSS, mobile responsive, creando landing pages. De mis primeros trabajos.",
+        date: "5/20/2020"
     },
     {
         id: 24,
@@ -585,7 +629,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/social-dash-large1.jpg", "./imgs/large/social-dash-large2.jpg", "./imgs/large/social-dash-mobile-large1.jpg"],
         link: "https://belen-dominguez.github.io/practicas/06-social-media/index.html",
         status: "Terminado",
-        description:"Creando landing pages. Practicando HTML & CSS. Cambio de estilos. Mobile responsive. De mis primeros trabajos."
+        description:"Creando landing pages. Practicando HTML & CSS. Cambio de estilos. Mobile responsive. De mis primeros trabajos.",
+        date: "5/20/2020"
     },
     {
         id: 25,
@@ -595,7 +640,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/four-card-large.jpg", "./imgs/large/four-card-mobile-large.jpg"],
         link: "https://belen-dominguez.github.io/practicas/09-Four-card_landing/",
         status: "Terminado",
-        description: "Creando landing pages. Practicando HTML & CSS. Jugando con multi-columns. Mobile responsive. De mis primeros trabajos."
+        description: "Creando landing pages. Practicando HTML & CSS. Jugando con multi-columns. Mobile responsive. De mis primeros trabajos.",
+        date: "5/20/2020"
     },
     {
         id: 26,
@@ -605,7 +651,8 @@ const workPortfolioEsp = [
         img_large: "./imgs/large/captivate-large.jpg",
         link: "https://belen-dominguez.github.io/practicas/17-Captivate/",
         status: "Terminado",
-        description:"Creando landing pages. Practicando HTML & CSS.  De mis primeros trabajos."
+        description:"Creando landing pages. Practicando HTML & CSS.  De mis primeros trabajos.",
+        date: "5/20/2020"
     },
     {
         id: 27,
@@ -615,7 +662,8 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/usance-large.jpg", "./imgs/large/usance-mobile-lareg.jpg"],
         link: "https://belen-dominguez.github.io/practicas/18-Usance-landing/",
         status: "Terminado",
-        description: 'Creando landing pages. Practicando HTML & CSS.  De mis primeros trabajos.'
+        description: 'Creando landing pages. Practicando HTML & CSS.  De mis primeros trabajos.',
+        date: "5/20/2020"
     },
     {
         id: 28,

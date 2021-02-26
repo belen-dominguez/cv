@@ -90,32 +90,30 @@ let splitArr = [] ;
 const paginationDiv = document.querySelector('.pag-container');
 
 const checkDate = (workToDisplay) => {
-    let currentDate = new Date();
-    let priorityCk = 1
-    workToDisplay.forEach(item => {
-        if(item.date){
-            /*86400000 son la cant de milisegundos en 1 dia */
-            let day = new Date(item.date) /*dia  del item */
-            let difference = currentDate - day /*diferencia entre el dia del item y la fecha actual en milisegundos*/
-            let diffInDays = Math.floor(difference / 86400000) /*sacamos la diferencia en cantidad de dias*/
-
-       
-            if(diffInDays < 30) {
-                item.badge = true
-                item.priority = priorityCk++
-            }
-
-        }
-        else {
-            item.priority = 1 
-        }
    
+    let sortArrByNewWork = workToDisplay.sort((a, b) => {
+        let current = new Date();
+        let workA = new Date(a.date) 
+        let workB = new Date(b.date)
+    
+         let date = current - workA;
+         let date2 = current - workB
+
+        return date - date2
     })
 
-    let sortArrByNewWork = workToDisplay.sort((a,b) => {
-        return  b.priority - a.priority 
-
+    sortArrByNewWork.forEach(item => {
+        let current = new Date();
+        let date = new Date(item.date)
+    
+        let calc = current - date;
+        let days = Math.round(calc / 86400000);
+    
+        if(days <= 15 ){
+            item.badge = true;
+        }
     })
+
   
 
    return sortArrByNewWork
