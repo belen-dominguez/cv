@@ -351,6 +351,17 @@ const workPortfolio = [
         description: 'Practising JS and Drag and Drop API. A trello clone, only for desktop.',
         date: '2/26/2021'
     },
+    {
+        id: 32,
+        type: "javascript",
+        name: "Card Effect Animation",
+        img: "./imgs/cardEffect-preview.jpg",
+        img_large: ["./imgs/large/cardEffect-large1.jpg","./imgs/large/cardEffect-large2.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/35-card-animation",
+        status: "Complete",
+        description: 'Practising JS and CSS animation. Applying card transition effects, menu toggle and background change. No libraries. Only for desktop.',
+        date: '3/9/2021'
+    },
 
 ]
 
@@ -706,8 +717,19 @@ const workPortfolioEsp = [
         img_large: ["./imgs/large/trello-clone-large1.jpg","./imgs/large/trello-clone-large2.jpg", "./imgs/large/trello-clone-large3.jpg"],
         link: "https://belen-dominguez.github.io/practicas/34-Dnd-app",
         status: "Terminado",
-        description: 'Practicando JS y Drag and Drop API. Clon de Trello, solo desktop.',
+        description: 'Practicando JS y Drag and Drop API. Clon de Trello, sólo desktop.',
         date: '2/26/2021'
+    },
+    {
+        id: 32,
+        type: "javascript",
+        name: "Card Effect Animation",
+        img: "./imgs/cardEffect-preview.jpg",
+        img_large: ["./imgs/large/cardEffect-large1.jpg","./imgs/large/cardEffect-large2.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/35-card-animation",
+        status: "Terminado",
+        description: 'Practicando animaciones con JS y CSS. Si aplicó un efecto de transición en las tarjectas, menu toggle y cambios en el background. Sin librerías. Sólo desktop.',
+        date: '3/9/2021'
     },
 
 ]
