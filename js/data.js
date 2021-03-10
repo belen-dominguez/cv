@@ -346,7 +346,7 @@ const workPortfolio = [
         name: "Trello Clone",
         img: "./imgs/trello-clone-preview.jpg",
         img_large: ["./imgs/large/trello-clone-large1.jpg","./imgs/large/trello-clone-large2.jpg", "./imgs/large/trello-clone-large3.jpg"],
-        link: "https://belen-dominguez.github.io/practicas/34- Dnd-app",
+        link: "https://belen-dominguez.github.io/practicas/34-Dnd-app",
         status: "Complete",
         description: 'Practising JS and Drag and Drop API. A trello clone, only for desktop.',
         date: '2/26/2021'
