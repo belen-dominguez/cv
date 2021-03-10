@@ -137,7 +137,8 @@ const fetchWork = (e) => {
         workToDisplay = myWork
     }
     else {
-        workToDisplay = myWork.filter(item => item.type == id )
+        // workToDisplay = myWork.filter(item => item.type == id )
+        workToDisplay = myWork.filter(item => item.type.includes(id))
     }
 
     /*sort by new items*/

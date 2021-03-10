@@ -468,9 +468,19 @@ header nav a:hover {
 .work-item .text h3 {
     padding-left: 1rem;
 }
-#work .work-item a:hover .text{
-    opacity: 1;
-    transform: translateY(-20px);
+
+@media screen and (min-width: 600px){
+    #work .work-item a:hover .text{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+@media screen and (max-width: 600px){
+
+    #work .work-item .text {
+        padding: .2rem 0 !important;
+        line-height: 15px;  
+    }
 }
 
 .individual-work {

@@ -174,6 +174,9 @@ const displayIndividualProject = (id) => {
     if(type == "HTML"){
         type = "HTML & CSS"
     }
+    if(type.includes("JAVASCRIPT - HTML") ){
+        type = "JAVASCRIPT & CSS"
+    }
 
     let dateFormat = formatDate(work.date)
 

@@ -331,7 +331,7 @@ const workPortfolio = [
     },
     {
         id: 30,
-        type: "javascript",
+        type: "javascript - html - animation",
         name: "Landing with Animations",
         img: "./imgs/landingAnimations-preview.jpg",
         img_large: ["./imgs/large/landingAnimations-large.jpg","./imgs/large/landingAnimations-large2.jpg", "./imgs/large/landingAnimations-mobile-large.jpg"],
@@ -353,7 +353,7 @@ const workPortfolio = [
     },
     {
         id: 32,
-        type: "javascript",
+        type: "javascript - html - animation",
         name: "Card Effect Animation",
         img: "./imgs/cardEffect-preview.jpg",
         img_large: ["./imgs/large/cardEffect-large1.jpg","./imgs/large/cardEffect-large2.jpg"],
@@ -700,7 +700,7 @@ const workPortfolioEsp = [
     },
     {
         id: 30,
-        type: "javascript",
+        type: "javascript - html - animation",
         name: "Landing con Animaciones",
         img: "./imgs/landingAnimations-preview.jpg",
         img_large: ["./imgs/large/landingAnimations-large.jpg","./imgs/large/landingAnimations-large2.jpg", "./imgs/large/landingAnimations-mobile-large.jpg"],
@@ -722,13 +722,13 @@ const workPortfolioEsp = [
     },
     {
         id: 32,
-        type: "javascript",
+        type: "javascript - html - animation",
         name: "Card Effect Animation",
         img: "./imgs/cardEffect-preview.jpg",
         img_large: ["./imgs/large/cardEffect-large1.jpg","./imgs/large/cardEffect-large2.jpg"],
         link: "https://belen-dominguez.github.io/practicas/35-card-animation",
         status: "Terminado",
-        description: 'Practicando animaciones con JS y CSS. Si aplicó un efecto de transición en las tarjectas, menu toggle y cambios en el background. Sin librerías. Sólo desktop.',
+        description: 'Practicando animaciones con JS y CSS. Si aplicó un efecto de transición en las tarjetas, menu toggle y cambios en el background. Sin librerías. Sólo desktop.',
         date: '3/9/2021'
     },
 
