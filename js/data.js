@@ -362,6 +362,17 @@ const workPortfolio = [
         description: 'Practising JS and CSS animation. Applying card transition effects, menu toggle and background change. No libraries. Only for desktop.',
         date: '3/9/2021'
     },
+    {
+        id: 33,
+        type: "javascript - html - animation",
+        name: "Clone Nascostify Landing",
+        img: "./imgs/nascostify-preview.jpg",
+        img_large: ["./imgs/large/nascostify-large1.jpg","./imgs/large/nascostify-large1.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/36-landing_nascostify",
+        status: "Complete",
+        description: 'Practising JS and CSS animation. Clone of landing: nascostify.com. Applying scroll animations. No libraries. Only for desktop.',
+        date: '3/27/2021'
+    },
 
 ]
 
@@ -730,6 +741,17 @@ const workPortfolioEsp = [
         status: "Terminado",
         description: 'Practicando animaciones con JS y CSS. Si aplicó un efecto de transición en las tarjetas, menu toggle y cambios en el background. Sin librerías. Sólo desktop.',
         date: '3/9/2021'
+    },
+    {
+        id: 33,
+        type: "javascript - html - animation",
+        name: "Clone Nascostify Landing",
+        img: "./imgs/nascostify-preview.jpg",
+        img_large: ["./imgs/large/nascostify-large1.jpg","./imgs/large/nascostify-large1.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/36-landing_nascostify",
+        status: "Terminado",
+        description: 'Practicando animaciones con JS y CSS. Clone de landing: nascostify.com. Aplicando efectos al scrollear. Sin librerías. Sólo desktop.',
+        date: '3/27/2021'
     },
 
 ]
