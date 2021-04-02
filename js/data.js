@@ -373,6 +373,17 @@ const workPortfolio = [
         description: 'Practising JS and CSS animation. Clone of landing: nascostify.com. Applying scroll animations. No libraries. Only for desktop.',
         date: '3/27/2021'
     },
+    {
+        id: 34,
+        type: "javascript - html - animation",
+        name: "Clone WannaThis Landing",
+        img: "./imgs/wanna-preview.jpg",
+        img_large: ["./imgs/large/wanna-large.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/37-landing_wanna",
+        status: "Complete",
+        description: 'Practising JS and CSS animation. Clone of landing: wannathis.one. Applying scroll animations. No libraries. Only for desktop.',
+        date: '3/31/2021'
+    },
 
 ]
 
@@ -752,6 +763,17 @@ const workPortfolioEsp = [
         status: "Terminado",
         description: 'Practicando animaciones con JS y CSS. Clone de landing: nascostify.com. Aplicando efectos al scrollear. Sin librerías. Sólo desktop.',
         date: '3/27/2021'
+    },
+    {
+        id: 34,
+        type: "javascript - html - animation",
+        name: "Clone WannaThis Landing",
+        img: "./imgs/wanna-preview.jpg",
+        img_large: ["./imgs/large/wanna-large.jpg"],
+        link: "https://belen-dominguez.github.io/practicas/37-landing_wanna",
+        status: "Terminado",
+        description: 'Practicando animaciones con JS y CSS. Clone de landing: wannathis.one. Aplicando efectos al scrollear. Sin librerías. Sólo desktop.',
+        date: '3/31/2021'
     },
 
 ]
