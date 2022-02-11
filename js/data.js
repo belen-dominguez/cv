@@ -483,7 +483,7 @@ const workPortfolio = [
     status: "Complete",
     description:
       "Practising JS and CSS animation. Clone of landing: sage.gg. Applying scroll animations. Libraries: GSAP - Scroll Magic. Only for desktop.",
-    date: "4/2/2022",
+    date: "2/2/2022",
   },
   {
     id: 37,
@@ -495,7 +495,7 @@ const workPortfolio = [
     status: "Complete",
     description:
       "Practising JS and CSS animation. Clone of landing: depositphotos.com. Applying scroll animations. Libraries: GSAP - Scroll Magic. Only for desktop.",
-    date: "11/2/2022",
+    date: "2/11/2022",
   },
 ];
 
@@ -987,7 +987,7 @@ const workPortfolioEsp = [
     status: "Terminado",
     description:
       "Practicando animaciones con JS y CSS. Clone de landing: sage.gg. Aplicando efectos al scrollear. Librerías: GSAP - Scroll Magic. Sólo desktop.",
-    date: "4/2/2022",
+    date: "2/2/2022",
   },
   {
     id: 37,
@@ -999,6 +999,6 @@ const workPortfolioEsp = [
     status: "Complete",
     description:
       "Practicando animaciones con JS y CSS. Clone de landing: depositphotos.com. Aplicando efectos al scrollear. Librerías: GSAP - Scroll Magic. Sólo desktop.",
-    date: "11/2/2022",
+    date: "12/11/2022",
   },
 ];
