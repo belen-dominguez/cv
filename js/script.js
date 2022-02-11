@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
 
   if (location.pathname == `${path}/index.html`) {
     myWork = workPortfolio;
-    console.log(myWork);
+
     title = [
       "Hi! ",
       "my name is Belu,",
@@ -84,7 +84,6 @@ let splitArr = [];
 const paginationDiv = document.querySelector(".pag-container");
 
 const checkDate = (workToDisplay) => {
-  console.log(workToDisplay);
   let sortArrByNewWork = workToDisplay.sort((a, b) => {
     let current = new Date();
     let workA = new Date(a.date);
