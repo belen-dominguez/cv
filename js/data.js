@@ -996,9 +996,9 @@ const workPortfolioEsp = [
     img: "./imgs/deposit-preview.png",
     img_large: ["./imgs/large/deposit-large.png"],
     link: "https://belen-dominguez.github.io/practicas/40-deposit-clone",
-    status: "Complete",
+    status: "Terminado",
     description:
       "Practicando animaciones con JS y CSS. Clone de landing: depositphotos.com. Aplicando efectos al scrollear. Librerías: GSAP - Scroll Magic. Sólo desktop.",
-    date: "12/11/2022",
+    date: "2/11/2022",
   },
 ];
