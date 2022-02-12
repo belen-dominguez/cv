@@ -125,7 +125,6 @@ const fetchWork = (e) => {
   if (id == "all") {
     workToDisplay = myWork;
   } else {
-    // workToDisplay = myWork.filter(item => item.type == id )
     workToDisplay = myWork.filter((item) => item.type.includes(id));
   }
 

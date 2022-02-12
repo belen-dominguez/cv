@@ -10,42 +10,34 @@ window.addEventListener("scroll", () => {
 
 /*Education */
 const educationDiv = document.querySelector(".education-container");
-const educationDivChildren = educationDiv.children;
+const educationItem = educationDiv.querySelectorAll(".education-item");
 
-window.addEventListener("scroll", () => {
-  let startHeight = 0;
+const showEducationItems = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("education-item-active");
+    } else {
+      entry.target.classList.remove("education-item-active");
+    }
+  });
+};
 
-  if (
-    educationDiv.getBoundingClientRect().top > 170 &&
-    educationDiv.getBoundingClientRect().top < 280
-  ) {
-    educationDiv.addEventListener("scroll", (e) => {
-      for (i = 0; i < educationDivChildren.length; i++) {
-        for (let j = 0; j < educationDivChildren[i].children.length; j++) {
-          let top =
-            educationDivChildren[i].children[j].getBoundingClientRect().top;
+educationDiv.addEventListener("scroll", () => {
+  const options = {
+    root: educationDiv,
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
 
-          if (top > 0 || top < 600) {
-            educationDivChildren[i].children[j].classList.add(
-              "education-item-active"
-            );
-          }
-          if (top < 0 || top > 500) {
-            educationDivChildren[i].children[j].classList.remove(
-              "education-item-active"
-            );
-          }
-        }
-      }
+  const observer = new IntersectionObserver(showEducationItems, options);
+  educationItem.forEach((item) => observer.observe(item));
 
-      const progressBar = document.getElementById("myBar");
+  const progressBar = document.getElementById("myBar");
 
-      let totalwidth = educationDiv.scrollTopMax;
-      let divScroll = educationDiv.scrollTop;
-      let width = (divScroll * 100) / totalwidth;
-      progressBar.style.width = width + "%";
-    });
-  }
+  const totalHeight = educationDiv.scrollHeight - educationDiv.offsetHeight;
+  const divScroll = educationDiv.scrollTop;
+  const width = (divScroll * 100) / totalHeight;
+  progressBar.style.width = width + "%";
 });
 
 const scrollDown = (nro) => {
