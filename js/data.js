@@ -497,6 +497,18 @@ const workPortfolio = [
       "Practising JS and CSS animation. Clone of landing: depositphotos.com. Applying scroll animations. Libraries: GSAP - Scroll Magic. Only for desktop.",
     date: "2/11/2022",
   },
+  {
+    id: 38,
+    type: "javascript - html - animation",
+    name: "Clone ShiftParadigm Landing",
+    img: "./imgs/shift-preview.png",
+    img_large: ["./imgs/large/shift-large.jpg"],
+    link: "https://belen-dominguez.github.io/practicas/41-shift-clone",
+    status: "Complete",
+    description:
+      "Practising JS and CSS animation. Clone of landing: shiftparadigm.com. Applying animations on hover. Libraries: GSAP. Only for desktop.",
+    date: "2/16/2022",
+  },
 ];
 
 const workPortfolioEsp = [
@@ -1000,5 +1012,17 @@ const workPortfolioEsp = [
     description:
       "Practicando animaciones con JS y CSS. Clone de landing: depositphotos.com. Aplicando efectos al scrollear. Librerías: GSAP - Scroll Magic. Sólo desktop.",
     date: "2/11/2022",
+  },
+  {
+    id: 38,
+    type: "javascript - html - animation",
+    name: "Clone ShiftParadigm Landing",
+    img: "./imgs/shift-preview.png",
+    img_large: ["./imgs/large/shift-large.jpg"],
+    link: "https://belen-dominguez.github.io/practicas/41-shift-clone",
+    status: "Terminado",
+    description:
+      "Practicando animaciones con JS y CSS. Clone de landing: shiftparadigm.com. Aplicando efectos al hacer hover. Librerías: GSAP. Sólo desktop.",
+    date: "2/16/2022",
   },
 ];
